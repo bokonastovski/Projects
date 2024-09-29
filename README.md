@@ -1,22 +1,100 @@
 <h1 align="center">
-        <samp>&gt; Hey There!, I am
-                <b>Borjan Nastovski</b>
+        <samp>Project02 - Safe Blink
         </samp>
 </h1>
 
 <p align="center"> 
   <samp>
     <br>
-    「 I am a front-end developer student from <b>Macedonia</b> 」
-    <br>
-    <br>
-  </samp>
+    「 # Safe Web Experience Application
+
+Welcome to Safe Blink, a comprehensive web application dedicated to promoting safe web practices. Explore the features below to make the most out of your browsing experience.
+
+## Features
+
+### Discussions
+
+- **View Discussions**: Browse through existing discussions on safe web practices.
+- **Participate in Discussions**: Registered users can create new discussions and post comments.
+
+### Videos
+
+- **Watch Videos**: Access a library of educational videos on safe browsing.
+- **Comment on Videos**: Registered users can leave comments on videos to share insights and tips.
+
+### Badge System
+
+- **Earn Badges**: Users are rewarded with badges based on their activity:
+- _5 Videos Watched Badge_: Earned after watching at least 5 videos.
+
+### Registration and Login
+
+- **Account Management**: Users must register and log in to participate in discussions and comment on videos.
+
+### Profile Management
+
+- **Update Profile Information**: Users can manage their profile information, including birth date and email address.
+- **Badge Progress**: Track and upgrade badges based on user activities such as entering discussions and watching videos.
+
+### User Experience
+
+- **Video Filtering**: Filter video content for a tailored browsing experience.
+
+### And much more...
+
+## Starting the Server
+
+1. **Install Live Server Extension**:
+
+   - Open Visual Studio Code.
+   - Navigate to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window.
+   - Search for "Live Server" and install the extension.
+
+2. **Launch the Server**:
+
+   - Open the project folder in Visual Studio Code.
+   - Click the "Go Live" button located in the bottom right corner of the window.
+   - Alternatively, you can run the following command in the terminal:
+     ```bash
+     http-server
+     ```
+     This command assumes you have installed Live Server globally. If not, you can install it using npm: `npm install -g live-server`.
+
+   This will start a local server, and the application will be accessible.
+
+## User Authentication
+
+To fully utilize the application's features, such as signing in, earning badges, tracking activity, posting comments, and participating in discussions, you will need to authenticate your session.
+
+1. **Run the Authenticator**:
+
+   - Execute the `authenticator.py` script. This can be done by opening a terminal, navigating to the directory containing `authenticator.py`, and running the command:
+     ```bash
+     python authenticator.py
+     ```
+
+2. **Log In**:
+   - Use one of the following username-password combinations to log in:
+     - **Username**: User123 | **Password**: Pass123
+     - **Username**: User456 | **Password**: Pass456
+     - **Username**: User789 | **Password**: Pass789
+
+Once logged in, you can explore all the interactive features the application offers, such as earning badges for activity in the discussions, tracking your progress, and engaging with the community through comments and discussions.
+
+## Support
+
+If you encounter any issues or have questions, please consult the documentation or contact support for assistance.
+」
+<br>
+<br>
+</samp>
+
 </p>
 
 <details>  
   <ol>
     <li><a href="#about-me">About Me</a></li>
-    <li><a href="#languages">Coding Languages and Source-Code Editors</a></li>
+    <li><a href="#languages">Languages & Source-Code Editors</a></li>
     <li><a href="#about-the-project">About the projects</a></li>
   </ol>
 </details>
@@ -43,17 +121,13 @@
 <br/>
 <br/>
 
-<h2 id="languages">Coding Languages and Source-Code Editors</h2>
+<h2 id="languages">Languages & Source-Code Editors</h2>
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)<br>
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)<br>
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)<br>
-![Javascript](https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)<br>
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)<br>
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)<br>
-![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)<br>
-![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)<br>
-![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)<br>
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 <br/>
@@ -66,8 +140,5 @@ This repo contains all the projects I worked on as a student at the Brainster Pr
 
 Some of my projects are already live. So feel free to check them out on the following links below.
 
-- [Project 01 - Brainster Labs]()
-- [Project 02 - Safe Blink]()
-- [Project 03 - МЧРА - MHRA]()
-- [Hackaton 01 - Sava Osiguruvanje]()
-- [Hackaton 02 - Larger.World]()
+- [Project 01 - Brainster Labs](https://github.com/bokonastovski/projects-1/tree/01_BrainsterLabs)
+- [Hackaton 01 - Sava Osiguruvanje](https://github.com/bokonastovski/projects-1/tree/Hackaton01-SavaOsiguruvanje)
