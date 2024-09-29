@@ -1,5 +1,5 @@
 <h1 align="center">
-        <samp>Project02 - Safe Blink
+        <samp>PROJECT 02 - SAFE BLINK
         </samp>
 </h1>
 
@@ -140,5 +140,7 @@ This repo contains all the projects I worked on as a student at the Brainster Pr
 
 Some of my projects are already live. So feel free to check them out on the following links below.
 
-- [Project 01 - Brainster Labs](https://github.com/bokonastovski/projects-1/tree/01_BrainsterLabs)
-- [Hackaton 01 - Sava Osiguruvanje](https://github.com/bokonastovski/projects-1/tree/Hackaton01-SavaOsiguruvanje)
+- [Project 01 - Brainster Labs](https://github.com/bokonastovski/Projects/tree/Project01-BrainsterLabs)
+- [Project 02 - МЧРА - MHRA](https://github.com/bokonastovski/Projects/tree/Project03-MHRA)
+- [Hackaton 01 - Sava Osiguruvanje](https://github.com/bokonastovski/Projects/tree/Hackathon01-SavaOsiguruvanje)
+- [Hackathon 02 - Larger.world](https://github.com/bokonastovski/Projects/tree/Hackathon02-Larger.world)
