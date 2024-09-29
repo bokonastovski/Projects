@@ -42,7 +42,7 @@ The goal of the insurance app is to provide a user-friendly and intuitive platfo
 
 ## Hackathon Project
 
-This project was developed during a hackathon. The design was created using Figma and implemented with the help of a another colleague from the academy.
+This project was developed during a hackathon. The design was created using Figma and implemented with the help of another colleague from the academy.
 
 ## Starting the App
 
