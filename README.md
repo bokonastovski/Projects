@@ -101,5 +101,7 @@ This repo contains all the projects I worked on as a student at the Brainster Pr
 
 Some of my projects are already live. So feel free to check them out on the following links below.
 
-- [Project 01 - Brainster Labs](https://github.com/bokonastovski/projects-1/tree/01_BrainsterLabs)
-- [Project 02 - Brainster Labs](https://github.com/bokonastovski/projects-1/tree/02_SafeBlink)
+- [Project 01 - Brainster Labs](https://github.com/bokonastovski/Projects/tree/Project01-BrainsterLabs)
+- [Project 02 - Safe Blink](https://github.com/bokonastovski/Projects/tree/Project02-SafeBlink)
+- [Project 03 - МЧРА - MHRA](https://github.com/bokonastovski/Projects/tree/Project03-MHRA)
+- [Hackathon 02 - Larger.world](https://github.com/bokonastovski/Projects/tree/Hackathon02-Larger.world)
