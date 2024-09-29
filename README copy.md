@@ -1,13 +1,13 @@
 <h1 align="center">
-    <samp>Hackathon01 - Sava Insurance</samp>
+    <samp>Hackaton01 - Sava Osiguruvanje</samp>
 </h1>
 
 <p align="center"> 
   <samp>
     <br>
-    「 # Sava Insurance
+    「 # Sava Osiguruvanje
 
-The "Sava Insurance" app addresses critical issues related to policy management, invoicing, insurance claims, and damage reporting. It plays a significant role in both educating users about their insurance options and enabling effective management of their policies.
+The "Sava Osiguruvanje" app addresses critical issues related to policy management, invoicing, insurance claims, and damage reporting. It plays a significant role in both educating users about their insurance options and enabling effective management of their policies.
 
 ## The Goal
 
@@ -42,7 +42,7 @@ The goal of the insurance app is to provide a user-friendly and intuitive platfo
 
 ## Hackathon Project
 
-This project was developed during a hackathon. The design was created using Figma and implemented with the help of a another colleague from the academy.
+This project was developed during a hackathon. The design was created using Figma and implemented with the help of a colleague from the academy.
 
 ## Starting the App
 
