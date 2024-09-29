@@ -1,12 +1,15 @@
-# Hackathon 02 - Larger.World
-
+<h1 text-align="center">
+  
+HACKATHON 02 - LARGER>WORLD
+</h1>
 ## Overview
 
 The **Larger.World** website introduces users to the concept of unlearning and its impact on creating a more sustainable and inclusive world. The design and content are aimed at inspiring users to explore the platform's resources and join the community. Rounded visual elements, inspired by the logo, were used to maintain compliance with brand guidelines.
 
 ## Team Collaboration
 
-This project was a collaborative effort by a group of four front-end developers, including myself. Together, we worked on different aspects of the website to ensure a seamless and engaging user experience.
+This project was a collaborative effort by a group of four front-end developers, including myself. Together, we worked on different aspects of the website to ensure a seamless and engaging user experience. **We won the Hackathon** with our project 'Larger.world.'
+
 
 ## My Contribution
 
