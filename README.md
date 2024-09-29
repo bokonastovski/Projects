@@ -1,5 +1,5 @@
 <h1 align="center">
-    <samp>Hackathon01 - Sava Insurance</samp>
+    <samp>HACKATHON 01 - SAVA INSURANCE</samp>
 </h1>
 
 <p align="center"> 
