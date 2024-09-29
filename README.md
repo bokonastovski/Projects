@@ -62,7 +62,7 @@ This repo contains all the projects I worked on as a student at the Brainster Pr
 
 Some of my projects are already live. So feel free to check them out on the following links below.
 
-- [Project 02 - Safe Blink]()
-- [Project 03 - МЧРА - MHRA]()
-- [Hackathon 01 - Sava Osiguruvanje]()
-- [Hackathon 02 - Larger.world]()
+- [Project 02 - Safe Blink](https://github.com/bokonastovski/Projects/tree/Project02-SafeBlink)
+- [Project 03 - МЧРА - MHRA](https://github.com/bokonastovski/Projects/tree/Project03-MHRA)
+- [Hackathon 01 - Sava Osiguruvanje](https://github.com/bokonastovski/Projects/tree/Hackathon01-SavaOsiguruvanje)
+- [Hackathon 02 - Larger.world](https://github.com/bokonastovski/Projects/tree/Hackathon02-Larger.world)
