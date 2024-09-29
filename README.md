@@ -1,7 +1,4 @@
-<h1 text-align="center">
-  
-HACKATHON 02 - LARGER>WORLD
-</h1>
+<h1 text-align="center"> HACKATHON 02 - LARGER.WORLD </h1>
 ## Overview
 
 The **Larger.World** website introduces users to the concept of unlearning and its impact on creating a more sustainable and inclusive world. The design and content are aimed at inspiring users to explore the platform's resources and join the community. Rounded visual elements, inspired by the logo, were used to maintain compliance with brand guidelines.
