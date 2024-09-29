@@ -1,0 +1,109 @@
+@use "../abstracts/variables" as var;
+
+.how-it-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var.rem-calc(80);
+  padding-bottom: var.rem-calc(216);
+  &__circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var.rem-calc(120);
+    height: var.rem-calc(120);
+    border-radius: 50%;
+    text-align: center;
+    width: var.rem-calc(237);
+    height: var.rem-calc(237);
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .big-span {
+      width: var.rem-calc(124);
+      height: var.rem-calc(108);
+    }
+
+    &--left,
+    &--center,
+    &--right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    color: var.$color-text-light;
+    font-size: var.rem-calc(24);
+    line-height: var.rem-calc(36);
+    z-index: 1;
+    text-align: center;
+  }
+
+  &__line {
+    width: auto;
+    height: auto;
+
+    &--left {
+      margin-right: var.rem-calc(-8);
+      margin-left: var.rem-calc(-9);
+    }
+    &--right {
+      margin-left: var.rem-calc(-7);
+      margin-right: var.rem-calc(-9);
+    }
+  }
+}
+
+.about-section {
+  &__title {
+    padding-bottom: var.rem-calc(120);
+    font-size: var.rem-calc(56);
+    line-height: var.rem-calc(68);
+  }
+  &__text {
+    font-size: 32px !important;
+    line-height: 44px !important;
+  }
+
+  &__trees {
+    margin-top: var.rem-calc(80);
+    margin-bottom: var.rem-calc(180);
+  }
+}
+
+.last-text {
+  padding-bottom: var.rem-calc(120);
+}
+
+.flower-with-people {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .flower-text {
+    position: absolute;
+    top: 63%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    color: var.$color-text-light;
+    font-size: var.rem-calc(24);
+    line-height: var.rem-calc(36);
+    width: 15.5%;
+  }
+}

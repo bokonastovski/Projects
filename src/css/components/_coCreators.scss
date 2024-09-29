@@ -1,0 +1,493 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.slide {
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+  display: inline-block; 
+  margin-right: -1px;
+  color: #1F3A7C;
+  white-space: normal;
+}
+
+.ui-card{
+  z-index: 1000;
+}
+
+.coCreatorsContainer{
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 100vh;
+
+  .coCreatorsSectionOne{
+    background-image: url("../picturesFolder/coCreators/coCreatorsSection1.png");
+    width: calc(4.6959 * 100vh);
+    position: relative;
+
+    .coCreatorsHomeContent{
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-around;
+
+      .textContent{
+        padding-left: 7%;
+        max-width: 45vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        .headingContainer{
+          white-space: normal;
+          word-wrap: break-word; 
+          overflow-wrap: break-word; 
+          margin-top: 15%;
+          h1{
+            font-size: 70px;
+            font-weight: 400;
+            margin-bottom: 10%;
+          }
+          p{
+            font-size: 28px;
+          }
+          span{
+            margin-top: 20px;
+            display: block;
+          }
+        }
+        
+        .upDownContainer{
+          margin-bottom: 20px;
+          position: relative;
+          z-index: 2;
+
+          p{
+            font-size: 21px;
+            line-height: 30px;
+          }
+
+          @keyframes expandRetract {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.2); /* Scale up to 120% */
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+
+          img{
+            margin-top: 20px;
+            animation: expandRetract 1.5s infinite ease-in-out;
+          }
+        }
+      }
+    }
+
+    .chairsContainer{
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      z-index: 1;
+    }
+
+    .coworkOneContainer{
+      position: absolute;
+      left: 45%;
+      bottom: 0;
+      .ui-card{
+        position: absolute;
+        bottom: 30%;
+        left: 30%;
+      }
+      .seePostIcon1{
+        position: absolute;
+        left: 10%;
+        bottom: 260px;
+        transition: transform 0.3s ease;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .coworkTwoContainer{
+      position: absolute;
+      left: 63%;
+      bottom: 0;
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: 45%;
+      }
+      .seePostIcon2{
+        position: absolute;
+        left: 32%;
+        bottom: 220px;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .coworkThreeContainer{
+      position: absolute;
+      left: 81%;
+      bottom: 0;
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: 40%;
+      }
+      .seePostIcon3{
+        position: absolute;
+        left: 24%;
+        bottom: 235px;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .coCreatorsSectionTwo{
+    background-image: url("../picturesFolder/coCreators/coCreatorsSection2.png");
+    width: calc(4.7027 * 100vh);
+    position: relative;
+
+    .noteContainer{
+      position: absolute;
+    }
+
+    .note2{
+      top: 0;
+      left: 3%;
+    }
+
+    .coworkFourContainer{
+      position: absolute;
+      left: 15%;
+      bottom: 0;
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: 20%;
+      }
+      .seePostIcon3{
+        position: absolute;
+        left: 55%;
+        bottom: 50px;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .coworkFiveContainer{
+      position: absolute;
+      left: 38%;
+      bottom: 0;
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: -30%;
+      }
+      .seePostIcon4{
+        position: absolute;
+        left: 65%;
+        top: 5%;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .note3{
+      top: 0;
+      left: 51%;
+    }
+
+    .coworkSixContainer{
+      position: absolute;
+      left: 65%;
+      bottom: -1%;
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: 30%;
+      }
+      .seePostIcon4{
+        position: absolute;
+        left: 11%;
+        bottom: 45%;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .coworkSevenContainer{
+      position: absolute;
+      left: 79%;
+      bottom: -1%;
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: -130%;
+      }
+      .seePostIcon4{
+        position: absolute;
+        left: 54%;
+        bottom: 67%;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .note4{
+      top: 0;
+      left: 85%;
+    }
+
+    .coworkEightContainer{
+      position: absolute;
+      left: 90%;
+      bottom: 15%;
+      .coworkImg7{
+        transform: scale(1.8);
+      }
+      .ui-card{
+        position: absolute;
+        bottom: -20%;
+        left: -50%;
+      }
+      .seePostIcon5{
+        position: absolute;
+        left: 32%;
+        bottom: -25%;
+        z-index: 15;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .coCreatorsSectionThree{
+    background-image: url("../picturesFolder/coCreators/coCreatorsSection3.png");
+    width: calc(4.7086 * 100vh);
+    position: relative;
+    margin-right: -2px;
+
+    .coworkNinthContainer{
+      position: absolute;
+      left: 6%;
+      bottom: 2%;
+      .ui-card{
+        position: absolute;
+        bottom: 0%;
+        left: 200%;
+      }
+      .seePostIcon3{
+        position: relative;
+        left: 35%;
+        bottom: 42%;
+        z-index: 15;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .seePostContainer{
+      position: absolute;
+      left: 39%;
+      bottom: 37%;
+      .ui-card{
+        position: absolute;
+        bottom: -150%;
+        left: 150%;
+      }
+      .seePostIcon2{
+        position: relative;
+        bottom: 0%;
+        left: 0%;
+        z-index: 15;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .coworkTenthContainer{
+      position: absolute;
+      left: 47%;
+      bottom: -1%;
+      .ui-card{
+        position: absolute;
+        bottom: -70%;
+        left: 400%;
+      }
+      .seePostIcon1{
+        position: relative;
+        left: 200%;
+        padding-bottom: 40px;
+        bottom: 200%;
+        z-index: 15;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .boxContainer{
+      position: absolute;
+      left: 61%;
+      bottom: -1%;
+    }
+
+    .noteContainer{
+      position: absolute;
+    }
+
+    .note5{
+      top: 0;
+      left: 75%;
+    }
+
+    .coworkEleventhContainer{
+      position: absolute;
+      left: 87%;
+      bottom: 2%;
+      .coworkImg10{
+        transform: scale(1.1);
+      }
+      .seePostContainer{
+        position: absolute;
+        bottom: 19%;
+        left: 39%;
+      }
+      .ui-card{
+        position: absolute;
+        bottom: -40%;
+        left: 200%;
+      }
+      .seePostIcon6{
+        position: relative;
+        left: -70%;
+        padding-top: 100px;
+        bottom: 0%;
+        z-index: 15;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .coCreatorsSectionFour{
+    background-image: url("../picturesFolder/coCreators/coCreatorsSection4.png");
+    width: calc(4.7047 * 100vh);
+    position: relative;
+
+    .coworkTwelthContainer{
+      position: absolute;
+      left: 15%;
+      bottom: -1%;
+    }
+
+    .coworkThirteenContainer{
+      position: absolute;
+      left: 23%;
+      bottom: -1%;
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: 20%;
+      }
+      .seePostIcon4{
+        position: absolute;
+        left: 53%;
+        bottom: 24%;
+        z-index: 15;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .coworkFourteenContainer{
+      position: absolute;
+      left: 53%;
+      bottom: 3%;
+      .ui-card{
+        position: absolute;
+        bottom: 30%;
+        left: 40%;
+      }
+      .seePostIcon7{
+        position: absolute;
+        left: 29%;
+        bottom: 49%;
+        z-index: 15;
+        &:hover{
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .coCreatorsSectionFive{
+    background-image: url("../picturesFolder/coCreators/coCreatorsSection5.png");
+    width: calc(4.7018 * 100vh);
+    position: relative;
+
+    .coworkFifteenContainer{
+      position: absolute;
+      right: 98%;
+      bottom: 30%;
+      img{
+        transform: scale(14);
+      }
+    }
+
+    .note6{
+      position: absolute;
+      top: 0;
+      left: 26%;
+    }
+
+    .coworkSixteenContainer{
+      position: absolute;
+      left: 60%;
+      bottom: -1%;
+    }
+  }
+}

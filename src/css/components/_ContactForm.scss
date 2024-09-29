@@ -1,0 +1,136 @@
+@use "../abstracts/variables" as var;
+
+.contact {
+  width: 100%;
+  background: var.$color-background-dark;
+  padding-top: 216px;
+}
+
+.contact-form {
+  color: var.$color-text-light;
+  padding: var.rem-calc(20) 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+
+  &__title {
+    font-weight: var.$font-weight-normal;
+    font-size: var.$heading-size-big;
+    margin-bottom: var.$gutter-base;
+  }
+
+  &__subtitle {
+    font-size: var.rem-calc(24);
+    margin-bottom: var.rem-calc(32);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: var.rem-calc(32);
+  }
+
+  &__input,
+  &__textarea {
+    background: none;
+    border: 1px solid var.$color-border-light;
+    border-radius: var.rem-calc(60);
+    padding: var.rem-calc(20) var.rem-calc(40);
+    color: var.$color-text-light;
+    font-size: var.rem-calc(20);
+    width: 100%;
+
+    &::placeholder {
+      color: var.$color-placeholder-light;
+      transition: opacity 0.3s;
+    }
+
+    &:hover {
+      border: 1px solid var.$color-accent;
+      color: var.$color-accent;
+      font-weight: 400;
+    }
+
+    &:focus {
+      border: 2px solid var.$color-border-light;
+      color: var.$color-text-light;
+      outline: none;
+      font-weight: normal;
+
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: var.rem-calc(150);
+  }
+
+  &__name-phone {
+    display: flex;
+    gap: var.rem-calc(32);
+  }
+
+  &__required-text {
+    font-size: var.rem-calc(16);
+    margin-bottom: var.rem-calc(12);
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .contact-form__checkbox-image {
+      width: var.rem-calc(20);
+      height: var.rem-calc(20);
+      margin-right: var.rem-calc(12);
+      cursor: pointer;
+    }
+
+    .contact-form__checkbox-text {
+      font-size: var.rem-calc(16);
+    }
+  }
+
+  &__button {
+    width: 416px;
+    height: 76px;
+    background: var.$color-accent;
+    color: var.$color-text-light;
+    border: 1px solid var.$color-accent;
+    border-radius: var.rem-calc(60);
+    padding: var.rem-calc(10);
+    font-size: var.rem-calc(20);
+    transition: background 0.3s;
+    gap: var.rem-calc(10);
+
+    &:hover {
+      background: var.$color-border-light;
+      color: var.$color-accent;
+    }
+  }
+
+  &__leaf-image-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__leaf-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.contact-form--about-page .contact-form {
+  justify-content: flex-start;
+  margin: 0;
+  width: 100%;
+}

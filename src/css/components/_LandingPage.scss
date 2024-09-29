@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as var;
+
+.landingPage {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: (var.$gutter-base * 2);
+    margin-bottom: (var.$gutter-base * 2);
+    border-left: 2px solid var.$color-accent;
+    padding-left: var.$gutter-base;
+
+    .sectionTitle {
+        font-weight: var.$font-weight-normal;
+        font-size: var.$heading-size-big;
+        margin-bottom: var.$gutter-base;
+    }
+
+
+    .worldsContainer,
+    .sectionThreeFlex {
+        display: flex;
+        margin-bottom: var.$gutter-base;
+    }
+}

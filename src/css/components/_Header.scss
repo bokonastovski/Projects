@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as var;
+
+nav {
+  background: var.$color-background-dark;
+  padding: var.rem-calc(20) var.rem-calc(40);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+  .headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    p {
+      color: var.$color-text-light;
+      font-size: var.rem-calc(24);
+    }
+
+    img {
+      margin-right: var.rem-calc(16);
+      transition: transform 2.5s ease-in-out;
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .navLink {
+    color: var.$color-text-light;
+    font-size: var.rem-calc(24);
+
+    &:hover {
+      color: var.$color-accent;
+    }
+
+    &:not(:last-child) {
+      margin-right: var.rem-calc(16);
+    }
+  }
+
+  .active {
+    color: var.$color-accent;
+  }
+
+  .socialIcon {
+    margin-right: var.rem-calc(16);
+    cursor: pointer;
+  }
+}

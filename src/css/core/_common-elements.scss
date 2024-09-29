@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+@import "./custom-font";
+
+* {
+  font-family: var.$font-family-base;
+  text-transform: lowercase;
+}
+
+body {
+  background-color: var.$color-background-dark;
+  color: var.$text-color-primary;
+}

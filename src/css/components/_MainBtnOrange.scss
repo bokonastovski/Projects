@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as var;
+
+.mainBtnOrange {
+    align-items: center;
+    background-color: var.$color-accent;
+    justify-content: center;
+    position: relative;
+    border: none;
+    border-radius: var.rem-calc(60);
+    padding: var.rem-calc(10);
+    width: var.rem-calc(315.14);
+    height: var.rem-calc(60);
+    margin-bottom: var.rem-calc(20);
+    font-size: var.rem-calc(18);
+    cursor: pointer;
+
+    .btnTextWrapper {
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        width: fit-content;
+        color: var.$color-text-light;
+    }
+
+    &:hover {
+        background-color: var.$background-color-primary;
+
+    }
+
+    &:hover>.btnTextWrapper {
+        color: var.$color-accent;
+    }
+}

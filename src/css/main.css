@@ -1,0 +1,2063 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none !important;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  text-transform: lowercase;
+}
+
+body {
+  background-color: #333333;
+  color: #fff;
+}
+
+@keyframes bounce1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+@keyframes bounce2 {
+  0% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+@keyframes bounce3 {
+  0% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+.butterflyImage {
+  position: absolute;
+  z-index: 40;
+  transition: transform 1s ease-in-out;
+  animation-fill-mode: both;
+  transform: scale(1);
+  cursor: pointer;
+}
+.butterflyImage:hover {
+  animation: bounce1 1s ease-in-out, bounce2 1s ease-in-out 1s, bounce3 1s ease-in-out 2s; /* Bounce 3 seconds infinitely */
+  transform: scale(1.15);
+}
+
+.treeButterflyComb {
+  position: absolute;
+  z-index: 30;
+  bottom: 0;
+}
+
+.outerPlanetEarthContainer {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 100vh;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.outerPlanetEarthContainer .backgroundHome {
+  background-color: #82935d;
+  width: 80vw;
+  height: 100vh;
+}
+.outerPlanetEarthContainer .backgroundHome .backgroundLayer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 90vw;
+  z-index: 10;
+}
+.outerPlanetEarthContainer .backgroundHome .planetEarthHomeContent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 95vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  z-index: 20;
+}
+.outerPlanetEarthContainer .backgroundHome .logoContainer img {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+.outerPlanetEarthContainer .backgroundHome .textContainer {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+  color: white;
+}
+.outerPlanetEarthContainer .backgroundHome .textContainer h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+.outerPlanetEarthContainer .backgroundHome .textContainer p {
+  font-size: 35px;
+  line-height: 50px;
+}
+.outerPlanetEarthContainer .backgroundHome .navigateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.outerPlanetEarthContainer .backgroundHome .navigateContainer p {
+  font-size: 24px;
+  line-height: 35px;
+}
+@keyframes expandRetract {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Scale up to 120% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.outerPlanetEarthContainer .backgroundHome .navigateContainer img {
+  width: 50px;
+  height: auto;
+  animation: expandRetract 1.5s infinite ease-in-out;
+}
+.outerPlanetEarthContainer .backgroundHome .homeNote img {
+  width: 350px;
+  height: auto;
+}
+.outerPlanetEarthContainer .slide {
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+  display: inline-block;
+  white-space: normal;
+  top: -100vh;
+  left: 80vw;
+}
+.outerPlanetEarthContainer .backgroundNumOne {
+  width: 360.1vh !important;
+  background-image: url("../picturesFolder/planetEarthPictures/backgroundNumOne.png");
+  position: relative;
+}
+.outerPlanetEarthContainer .backgroundNumOne .treeCombOne {
+  left: 30%;
+}
+.outerPlanetEarthContainer .backgroundNumOne .treeCombOne .butterflyImage {
+  bottom: 60%;
+  left: 30%;
+}
+.outerPlanetEarthContainer .backgroundNumOne .butterflyContainerHome1 .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: 55%;
+}
+.outerPlanetEarthContainer .backgroundNumOne .butterflyLeft {
+  bottom: 40%;
+  left: 65%;
+}
+.outerPlanetEarthContainer .backgroundNumOne .treeCombTwo {
+  left: 77%;
+  bottom: 0%;
+}
+.outerPlanetEarthContainer .backgroundNumOne .treeCombTwo .butterflyImage {
+  bottom: 60%;
+  left: 50%;
+  transform: scale(0.8);
+}
+.outerPlanetEarthContainer .backgroundNumOne .treeCombTwo .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+}
+.outerPlanetEarthContainer .backgroundNumOne .treeCombTwo .hedgehogImage {
+  position: absolute;
+  left: 25%;
+  bottom: 0%;
+  z-index: -1;
+}
+.outerPlanetEarthContainer .backgroundNumTwo {
+  width: 415.2vh !important;
+  background-image: url("../picturesFolder/planetEarthPictures/backgroundNumTwo.png");
+  position: relative;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .noteSecondCont {
+  position: absolute;
+  top: 0;
+  left: 3%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockButterflyComb {
+  position: absolute;
+  bottom: 0;
+  z-index: 30;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockCombOne {
+  left: 12%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockCombOne .rockImageOne {
+  transform: scale(1.1);
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockCombOne .ui-card {
+  position: absolute;
+  bottom: 110%;
+  left: 30%;
+  z-index: 1000;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockCombOne .butterflyRockOne {
+  left: 40%;
+  bottom: 40%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .treeCombThree {
+  left: 25%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .treeCombThree .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  z-index: 1000;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .treeCombThree .butterflyImage {
+  left: 50%;
+  bottom: 65%;
+  transform: scale(1.2);
+}
+.outerPlanetEarthContainer .backgroundNumTwo .noteThirdCont {
+  position: absolute;
+  top: 0;
+  left: 46%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .dirtButterflyComb {
+  position: absolute;
+  bottom: 30%;
+  left: 55%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .dirtButterflyComb .ui-card {
+  position: absolute;
+  bottom: -130%;
+  left: -80%;
+  z-index: 1000;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .dirtButterflyComb .butterflyImage {
+  bottom: 0;
+  left: 20%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .treeCombOne {
+  left: 65%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .treeCombOne .butterflyImage {
+  bottom: 65%;
+  left: 27%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockCombTwo {
+  left: 82%;
+  bottom: -3%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockCombTwo .ui-card {
+  position: absolute;
+  bottom: 20%;
+  left: -40%;
+  z-index: 1000;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockCombTwo .rockImageTwo {
+  transform: scale(0.8);
+}
+.outerPlanetEarthContainer .backgroundNumTwo .rockCombTwo .butterflyRockTwo {
+  bottom: 30%;
+  left: 30%;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .noteFourthCont {
+  position: absolute;
+  top: 13%;
+  left: 95%;
+  z-index: 50;
+}
+.outerPlanetEarthContainer .backgroundNumTwo .noteFourthCont img {
+  transform: scale(2.7);
+}
+.outerPlanetEarthContainer .backgroundNumThree {
+  width: 415.2vh !important;
+  background-image: url("../picturesFolder/planetEarthPictures/backgroundNumThree.png");
+  position: relative;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombOne {
+  position: absolute;
+  bottom: -8%;
+  left: 7%;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombOne .leavesOne {
+  transform: scale(0.9);
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombOne .ui-card {
+  position: absolute;
+  bottom: 20%;
+  left: 80%;
+  z-index: 1000;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombOne .butterflyImage {
+  bottom: 65%;
+  left: 13%;
+  transform: scale(1.2);
+}
+.outerPlanetEarthContainer .backgroundNumThree .noteFifthCont {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  z-index: 50;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombTwo {
+  position: absolute;
+  bottom: 0%;
+  left: 55%;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombTwo .leavesTwo {
+  transform: scale(0.9);
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombTwo .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: -70%;
+  z-index: 1000;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombTwo .butterflyImage {
+  bottom: 66%;
+  left: 15%;
+  transform: scale(1.3);
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombThree {
+  position: absolute;
+  bottom: -2%;
+  left: 72%;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombThree .leavesThree {
+  transform: scale(0.8);
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombThree .newButterflyCont {
+  position: absolute;
+  bottom: 69%;
+  left: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombThree .ui-card {
+  position: absolute;
+  bottom: -150%;
+  left: 110%;
+  z-index: 1000;
+}
+.outerPlanetEarthContainer .backgroundNumThree .leavesCombThree .butterflyImage {
+  position: relative;
+  transform: scale(1.3);
+}
+.outerPlanetEarthContainer .backgroundNumFour {
+  width: 415.2vh !important;
+  background-image: url("../picturesFolder/planetEarthPictures/backgroundNumFour.png");
+  position: relative;
+}
+.outerPlanetEarthContainer .backgroundNumFour .noteSixthCont {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 50;
+}
+.outerPlanetEarthContainer .backgroundEnd {
+  width: 139.7vh !important;
+  background-image: url("../picturesFolder/planetEarthPictures/backgroundEnd.png");
+  position: relative;
+}
+.outerPlanetEarthContainer .backgroundEnd .noteSeventhCont {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  z-index: 50;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fadeInAnimation {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fadeOutAnimation {
+  animation: fadeOut 1s ease-in-out;
+}
+
+.ui-card {
+  position: absolute;
+  bottom: 7%;
+  left: -2%;
+  width: 250px;
+  background-color: #004c99;
+  color: white;
+  border-top-right-radius: 120px;
+  border-top-left-radius: 120px;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 20000;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* Prevent interaction when not visible */
+}
+
+.ui-card.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto; /* Enable interaction when visible */
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 110px 110px 0 0;
+}
+
+.card-content {
+  position: relative;
+}
+
+.card-content h2 {
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.card-content p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: -22%;
+  right: 0%;
+  cursor: pointer;
+}
+
+.watch-button {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.watch-button:hover {
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.contact {
+  width: 100%;
+  background: #333333;
+  padding-top: 216px;
+}
+
+.contact-form {
+  color: #ffffff;
+  padding: 1.25rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.contact-form__title {
+  font-weight: 400;
+  font-size: 2.75rem;
+  margin-bottom: 2.5rem;
+}
+.contact-form__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-form__input, .contact-form__textarea {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 3.75rem;
+  padding: 1.25rem 2.5rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  width: 100%;
+}
+.contact-form__input::placeholder, .contact-form__textarea::placeholder {
+  color: #b7b7b7;
+  transition: opacity 0.3s;
+}
+.contact-form__input:hover, .contact-form__textarea:hover {
+  border: 1px solid #fa6400;
+  color: #fa6400;
+  font-weight: 400;
+}
+.contact-form__input:focus, .contact-form__textarea:focus {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  outline: none;
+  font-weight: normal;
+}
+.contact-form__input:focus::placeholder, .contact-form__textarea:focus::placeholder {
+  opacity: 0;
+}
+.contact-form__textarea {
+  resize: none;
+  height: 9.375rem;
+}
+.contact-form__name-phone {
+  display: flex;
+  gap: 2rem;
+}
+.contact-form__required-text {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+.contact-form__checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.contact-form__checkbox-container .contact-form__checkbox-image {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+.contact-form__checkbox-container .contact-form__checkbox-text {
+  font-size: 1rem;
+}
+.contact-form__button {
+  width: 416px;
+  height: 76px;
+  background: #fa6400;
+  color: #ffffff;
+  border: 1px solid #fa6400;
+  border-radius: 3.75rem;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  transition: background 0.3s;
+  gap: 0.625rem;
+}
+.contact-form__button:hover {
+  background: #ffffff;
+  color: #fa6400;
+}
+.contact-form__leaf-image-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form__leaf-image {
+  width: 100%;
+  height: auto;
+}
+
+.contact-form--about-page .contact-form {
+  justify-content: flex-start;
+  margin: 0;
+  width: 100%;
+}
+
+.newsletter {
+  background: #333333;
+  width: 100%;
+  padding-top: 216px;
+  padding-bottom: 116px;
+}
+.newsletter__content {
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #403f3f;
+  width: 80%;
+}
+.newsletter__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 25rem;
+}
+.newsletter__form-input {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 1.25rem;
+  padding: 0.625rem 0.625rem 0.625rem 2rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  width: 100%;
+  max-width: 25rem;
+  margin-bottom: 0.5rem;
+}
+.newsletter__form-input::placeholder {
+  transition: opacity 0.3s;
+}
+.newsletter__form-input:hover {
+  border: 1px solid #fa6400;
+  color: #fa6400;
+  font-weight: 400;
+}
+.newsletter__form-input:focus {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  outline: none;
+  font-weight: normal;
+}
+.newsletter__form-input:focus::placeholder {
+  opacity: 0;
+}
+.newsletter__form-subtext {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #b7b7b7;
+  align-self: flex-start;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+.newsletter__form-button {
+  background: #fa6400;
+  color: #ffffff;
+  border: none;
+  border-radius: 3.75rem;
+  padding: 0.625rem;
+  width: 19.69625rem;
+  height: 2.8125rem;
+  transition: background 0.3s;
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+}
+.newsletter__form-button:hover {
+  background: #ffffff;
+  color: #fa6400;
+}
+.newsletter__social {
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+}
+.newsletter__social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.newsletter__social-icon:hover {
+  transform: scale(1.1);
+}
+
+.faq {
+  margin-top: 13.5rem;
+  background: #333333;
+  color: #ffffff;
+  padding: 2.5rem;
+}
+.faq__title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  color: #ffffff;
+}
+.faq__list {
+  list-style: none;
+  padding: 5rem 0;
+  margin: 0;
+}
+.faq__item {
+  border: 1px solid #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  cursor: pointer;
+  background-color: #333333;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.faq__item:not(:last-of-type) {
+  margin-bottom: 2.4375rem;
+}
+.faq__item:hover {
+  background-color: #fa6400;
+  color: #ffffff;
+  border-color: #fa6400;
+}
+.faq__item.active {
+  background-color: #333333;
+}
+.faq__item.active:hover {
+  background-color: #333333;
+  border-color: #ffffff;
+}
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.faq__icon {
+  display: flex;
+  align-items: center;
+}
+.faq__icon .faq__arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: transform 0.3s;
+}
+.faq__icon .faq__arrow--active {
+  transform: rotate(180deg);
+}
+.faq__answer {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #b7b7b7;
+}
+
+.faq--about-page {
+  margin: 0;
+  margin-top: 13.5rem;
+  margin-bottom: -3.5rem;
+  padding: 0;
+}
+
+.subscriptions {
+  background: #333333;
+  color: #ffffff;
+  padding: 2.5rem 0;
+  padding-top: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.875rem;
+}
+.subscriptions__title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-bottom: 0.5625rem;
+}
+.subscriptions__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #b7b7b7;
+  padding-bottom: 3.75rem;
+}
+.subscriptions__plans {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 79.717%;
+}
+.subscriptions__plan {
+  background: none;
+  border: 1px solid #7323f4;
+  border-radius: 18.75rem 18.75rem 0.625rem 18.75rem;
+  padding: 2.5rem;
+  width: 28.4375rem;
+  height: 56.25rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12px;
+}
+.subscriptions__plan:not(:nth-of-type(2)) {
+  padding-top: 6.25rem;
+}
+.subscriptions__plan--highlighted {
+  background: #7323f4;
+  padding-top: 6.25rem;
+  color: #ffffff;
+  z-index: 1;
+}
+.subscriptions__plan--highlighted, .subscriptions__plan--team, .subscriptions__plan--basic {
+  width: 28.4375rem;
+  height: 56.25rem;
+}
+.subscriptions__flower {
+  position: absolute;
+  top: -0.9375rem;
+  right: 2.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.4375rem;
+  height: 9.4375rem;
+}
+.subscriptions__flower img {
+  width: 100%;
+  height: 100%;
+}
+.subscriptions__flower .subscriptions__flower-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.125rem;
+  color: #fa6400;
+  font-weight: 500;
+  line-height: 30px;
+}
+.subscriptions__plan-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.subscriptions__price {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.subscriptions__price-info {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.subscriptions__buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.875rem;
+  gap: 12px;
+}
+.subscriptions__button {
+  background: #fa6400;
+  color: #ffffff;
+  border: none;
+  border-radius: 3.75rem;
+  width: 10.5625rem;
+  height: 3.75rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: background 0.3s;
+}
+.subscriptions__button--buy {
+  background: none;
+  border: 1px solid #fa6400;
+  color: #fa6400;
+  cursor: pointer;
+}
+.subscriptions__button--buy:hover {
+  background: #fa6400;
+  color: #ffffff;
+}
+.subscriptions__features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 32px;
+  height: 17.875rem;
+}
+.subscriptions__features li {
+  padding: 15px 19px;
+  border-radius: 3.75rem;
+  border: 1px solid #ffffff;
+  width: 100%;
+}
+.subscriptions__features li:not(:last-of-type) {
+  margin-bottom: 0.625rem;
+}
+.subscriptions__features .subscriptions__feature-highlight {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-radius: 3.75rem;
+  border: 1px solid #ffffff;
+}
+.subscriptions__footer {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #b7b7b7;
+  padding-top: 3.75rem;
+}
+
+.subscriptions--landing-page {
+  align-items: flex-start;
+  width: 100%;
+}
+.subscriptions--landing-page .subscriptions__plans {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.slide {
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+  display: inline-block;
+  margin-right: -1px;
+  color: #1F3A7C;
+  white-space: normal;
+}
+
+.ui-card {
+  z-index: 1000;
+}
+
+.coCreatorsContainer {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 100vh;
+}
+.coCreatorsContainer .coCreatorsSectionOne {
+  background-image: url("../picturesFolder/coCreators/coCreatorsSection1.png");
+  width: 469.59vh;
+  position: relative;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent .textContent {
+  padding-left: 7%;
+  max-width: 45vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent .textContent .headingContainer {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-top: 15%;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent .textContent .headingContainer h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 10%;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent .textContent .headingContainer p {
+  font-size: 28px;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent .textContent .headingContainer span {
+  margin-top: 20px;
+  display: block;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent .textContent .upDownContainer {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent .textContent .upDownContainer p {
+  font-size: 21px;
+  line-height: 30px;
+}
+@keyframes expandRetract {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Scale up to 120% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.coCreatorsContainer .coCreatorsSectionOne .coCreatorsHomeContent .textContent .upDownContainer img {
+  margin-top: 20px;
+  animation: expandRetract 1.5s infinite ease-in-out;
+}
+.coCreatorsContainer .coCreatorsSectionOne .chairsContainer {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  z-index: 1;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkOneContainer {
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkOneContainer .ui-card {
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkOneContainer .seePostIcon1 {
+  position: absolute;
+  left: 10%;
+  bottom: 260px;
+  transition: transform 0.3s ease;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkOneContainer .seePostIcon1:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkTwoContainer {
+  position: absolute;
+  left: 63%;
+  bottom: 0;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkTwoContainer .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkTwoContainer .seePostIcon2 {
+  position: absolute;
+  left: 32%;
+  bottom: 220px;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkTwoContainer .seePostIcon2:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkThreeContainer {
+  position: absolute;
+  left: 81%;
+  bottom: 0;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkThreeContainer .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkThreeContainer .seePostIcon3 {
+  position: absolute;
+  left: 24%;
+  bottom: 235px;
+}
+.coCreatorsContainer .coCreatorsSectionOne .coworkThreeContainer .seePostIcon3:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionTwo {
+  background-image: url("../picturesFolder/coCreators/coCreatorsSection2.png");
+  width: 470.27vh;
+  position: relative;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .noteContainer {
+  position: absolute;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .note2 {
+  top: 0;
+  left: 3%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkFourContainer {
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkFourContainer .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkFourContainer .seePostIcon3 {
+  position: absolute;
+  left: 55%;
+  bottom: 50px;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkFourContainer .seePostIcon3:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkFiveContainer {
+  position: absolute;
+  left: 38%;
+  bottom: 0;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkFiveContainer .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: -30%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkFiveContainer .seePostIcon4 {
+  position: absolute;
+  left: 65%;
+  top: 5%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkFiveContainer .seePostIcon4:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .note3 {
+  top: 0;
+  left: 51%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkSixContainer {
+  position: absolute;
+  left: 65%;
+  bottom: -1%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkSixContainer .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkSixContainer .seePostIcon4 {
+  position: absolute;
+  left: 11%;
+  bottom: 45%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkSixContainer .seePostIcon4:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkSevenContainer {
+  position: absolute;
+  left: 79%;
+  bottom: -1%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkSevenContainer .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: -130%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkSevenContainer .seePostIcon4 {
+  position: absolute;
+  left: 54%;
+  bottom: 67%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkSevenContainer .seePostIcon4:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .note4 {
+  top: 0;
+  left: 85%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkEightContainer {
+  position: absolute;
+  left: 90%;
+  bottom: 15%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkEightContainer .coworkImg7 {
+  transform: scale(1.8);
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkEightContainer .ui-card {
+  position: absolute;
+  bottom: -20%;
+  left: -50%;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkEightContainer .seePostIcon5 {
+  position: absolute;
+  left: 32%;
+  bottom: -25%;
+  z-index: 15;
+}
+.coCreatorsContainer .coCreatorsSectionTwo .coworkEightContainer .seePostIcon5:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionThree {
+  background-image: url("../picturesFolder/coCreators/coCreatorsSection3.png");
+  width: 470.86vh;
+  position: relative;
+  margin-right: -2px;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkNinthContainer {
+  position: absolute;
+  left: 6%;
+  bottom: 2%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkNinthContainer .ui-card {
+  position: absolute;
+  bottom: 0%;
+  left: 200%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkNinthContainer .seePostIcon3 {
+  position: relative;
+  left: 35%;
+  bottom: 42%;
+  z-index: 15;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkNinthContainer .seePostIcon3:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionThree .seePostContainer {
+  position: absolute;
+  left: 39%;
+  bottom: 37%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .seePostContainer .ui-card {
+  position: absolute;
+  bottom: -150%;
+  left: 150%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .seePostContainer .seePostIcon2 {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  z-index: 15;
+}
+.coCreatorsContainer .coCreatorsSectionThree .seePostContainer .seePostIcon2:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkTenthContainer {
+  position: absolute;
+  left: 47%;
+  bottom: -1%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkTenthContainer .ui-card {
+  position: absolute;
+  bottom: -70%;
+  left: 400%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkTenthContainer .seePostIcon1 {
+  position: relative;
+  left: 200%;
+  padding-bottom: 40px;
+  bottom: 200%;
+  z-index: 15;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkTenthContainer .seePostIcon1:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionThree .boxContainer {
+  position: absolute;
+  left: 61%;
+  bottom: -1%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .noteContainer {
+  position: absolute;
+}
+.coCreatorsContainer .coCreatorsSectionThree .note5 {
+  top: 0;
+  left: 75%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkEleventhContainer {
+  position: absolute;
+  left: 87%;
+  bottom: 2%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkEleventhContainer .coworkImg10 {
+  transform: scale(1.1);
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkEleventhContainer .seePostContainer {
+  position: absolute;
+  bottom: 19%;
+  left: 39%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkEleventhContainer .ui-card {
+  position: absolute;
+  bottom: -40%;
+  left: 200%;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkEleventhContainer .seePostIcon6 {
+  position: relative;
+  left: -70%;
+  padding-top: 100px;
+  bottom: 0%;
+  z-index: 15;
+}
+.coCreatorsContainer .coCreatorsSectionThree .coworkEleventhContainer .seePostIcon6:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionFour {
+  background-image: url("../picturesFolder/coCreators/coCreatorsSection4.png");
+  width: 470.47vh;
+  position: relative;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkTwelthContainer {
+  position: absolute;
+  left: 15%;
+  bottom: -1%;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkThirteenContainer {
+  position: absolute;
+  left: 23%;
+  bottom: -1%;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkThirteenContainer .ui-card {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkThirteenContainer .seePostIcon4 {
+  position: absolute;
+  left: 53%;
+  bottom: 24%;
+  z-index: 15;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkThirteenContainer .seePostIcon4:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkFourteenContainer {
+  position: absolute;
+  left: 53%;
+  bottom: 3%;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkFourteenContainer .ui-card {
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkFourteenContainer .seePostIcon7 {
+  position: absolute;
+  left: 29%;
+  bottom: 49%;
+  z-index: 15;
+}
+.coCreatorsContainer .coCreatorsSectionFour .coworkFourteenContainer .seePostIcon7:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.coCreatorsContainer .coCreatorsSectionFive {
+  background-image: url("../picturesFolder/coCreators/coCreatorsSection5.png");
+  width: 470.18vh;
+  position: relative;
+}
+.coCreatorsContainer .coCreatorsSectionFive .coworkFifteenContainer {
+  position: absolute;
+  right: 98%;
+  bottom: 30%;
+}
+.coCreatorsContainer .coCreatorsSectionFive .coworkFifteenContainer img {
+  transform: scale(14);
+}
+.coCreatorsContainer .coCreatorsSectionFive .note6 {
+  position: absolute;
+  top: 0;
+  left: 26%;
+}
+.coCreatorsContainer .coCreatorsSectionFive .coworkSixteenContainer {
+  position: absolute;
+  left: 60%;
+  bottom: -1%;
+}
+
+.exploreSection {
+  width: 80%;
+  margin: 0 auto;
+}
+.exploreSection .contact-form {
+  width: 100%;
+  margin: 0;
+}
+.exploreSection .newsletter__content {
+  width: 100%;
+}
+
+.searchComponent {
+  margin-bottom: 5rem;
+}
+.searchComponent .autocomplete {
+  position: relative;
+}
+.searchComponent .suggestion {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  font-size: 16px;
+  width: 100%;
+  color: rgba(204, 204, 204, 0.4941176471);
+  pointer-events: none;
+  font-family: Arial, sans-serif;
+}
+.searchComponent input {
+  font-size: 18px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.searchComponent .match {
+  font-weight: bold;
+  color: transparent;
+}
+.searchComponent .input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.searchComponent .recommendations-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: #fa6400;
+  background: #333;
+  border: 0.5px solid #fa6400;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+}
+.searchComponent .recommendation-item {
+  padding: 10px;
+  cursor: pointer;
+}
+.searchComponent input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.searchComponent .search-options {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.searchComponent .search-options h4,
+.searchComponent .search-options select {
+  margin-right: 1rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+.searchComponent .search-options .border-right {
+  padding-right: 1rem;
+  border-right: 2px solid white;
+}
+.searchComponent select,
+.searchComponent option {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.searchComponent .btn {
+  background-color: #fa6400;
+  color: white;
+  border: none;
+  padding: 1rem 6rem;
+  border-radius: 20px;
+}
+.searchComponent .btn:hover {
+  background-color: white;
+  color: #fa6400;
+}
+.searchComponent .active {
+  color: #fa6400;
+}
+.searchComponent .dropdown-container {
+  position: relative;
+}
+.searchComponent .dropdown-container #dropdown label {
+  margin-bottom: 4px;
+  padding-left: 0px;
+  font-size: 14px;
+}
+.searchComponent .dropdown-container .orangeHover:hover {
+  color: #fa6400;
+}
+.searchComponent .dropdown-container .dropdown {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.searchComponent .dropdown-container .btn-world {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.searchComponent .dropdown-container .btn-world .arrow {
+  border: solid white;
+  border-width: 2px 0 0 2px;
+  margin-left: 10px;
+  padding: 4px;
+}
+.searchComponent .dropdown-container .hidden {
+  display: none;
+}
+.searchComponent .dropdown-container .arrow-up {
+  transform: rotate(45deg);
+}
+.searchComponent .dropdown-container .arrow-down {
+  transform: rotate(225deg);
+}
+.searchComponent .dropdown-container input[type=radio] {
+  display: none;
+}
+.searchComponent .dropdown-container .select-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 7px;
+}
+
+.exploreContent {
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 0.5px solid #ffffff;
+}
+.exploreContent img {
+  width: 75px;
+}
+.exploreContent .content {
+  width: 75%;
+}
+.exploreContent .content h2 {
+  margin-bottom: 0.5rem;
+}
+.exploreContent .content .p-bold {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.exploreContent .content .p-small {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+.exploreContent .card-btn {
+  background-color: transparent;
+  border: 1px solid #fa6400;
+  color: #fa6400;
+  padding: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.exploreContent .card-btn:hover {
+  background-color: white;
+}
+
+.page-header {
+  margin-top: 5rem;
+}
+.page-header h1 {
+  font-size: 2.5rem;
+  border-bottom: 1px solid #fa6400;
+  width: 70%;
+  padding-bottom: 1rem;
+}
+.page-header p {
+  margin: 2rem 0;
+  font-size: 20px;
+}
+
+.spaceszeroSection {
+  width: 80%;
+  margin: 0 auto;
+}
+.spaceszeroSection .contact-form {
+  margin: 0;
+  width: 100%;
+}
+.spaceszeroSection .newsletter__content {
+  width: 100%;
+}
+
+.podcastSection {
+  width: 80%;
+  margin: 0 auto;
+}
+.podcastSection .iframePodcast {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.podcastSection .podcastDesc {
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #ffffff;
+}
+.podcastSection .podcastImg {
+  margin-bottom: 5rem;
+}
+.podcastSection .contact-form {
+  width: 100%;
+  margin: 0;
+}
+.podcastSection .newsletter__content {
+  width: 100%;
+}
+
+.videoSection {
+  width: 80%;
+  margin: 0 auto;
+}
+.videoSection .video-iframe {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border: none !important;
+}
+.videoSection .podcastDesc {
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #ffffff;
+}
+.videoSection .contact-form {
+  width: 100%;
+  margin: 0;
+}
+.videoSection .newsletter__content {
+  width: 100%;
+}
+
+.articleSection {
+  width: 80%;
+  margin: 0 auto;
+}
+.articleSection .podcastDesc {
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #ffffff;
+}
+.articleSection .mb-5rem {
+  margin-bottom: 5rem;
+}
+.articleSection .contact-form {
+  width: 100%;
+  margin: 0;
+}
+.articleSection .newsletter__content {
+  width: 100%;
+}
+
+.sign-in {
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.sign-in-section {
+  color: #ffffff;
+  padding: 2.5rem 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.sign-in-section__title {
+  font-size: 3.5rem;
+  line-height: 4.25rem;
+  font-weight: 400;
+}
+.sign-in-section__divider {
+  width: 73.83%;
+  border: 1px solid #fa6400;
+  margin-bottom: 1rem;
+}
+.sign-in-section__text-and-link {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 400;
+}
+.sign-in-section__link {
+  color: #fa6400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 16px;
+  border-bottom: 1px solid #fa6400;
+}
+.sign-in-section__link img {
+  width: 32px;
+  height: 32px;
+}
+.sign-in-section__link:hover {
+  color: #c75000;
+  border-color: #c75000;
+}
+.sign-in-section__link:hover img {
+  filter: brightness(0.8);
+}
+
+.contact-page-form-main {
+  width: 100%;
+  padding-top: 7.25rem;
+}
+
+.contact-page-form {
+  background: #333333;
+  color: #ffffff;
+  padding: 2.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.contact-page-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.contact-page-form__input, .contact-page-form__textarea {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 3.75rem;
+  padding: 1.25rem 2.5rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  width: 100%;
+}
+.contact-page-form__input::placeholder, .contact-page-form__textarea::placeholder {
+  color: #b7b7b7;
+  transition: opacity 0.3s;
+}
+.contact-page-form__input:hover, .contact-page-form__textarea:hover {
+  border: 1px solid #fa6400;
+  color: #fa6400;
+  font-weight: 400;
+}
+.contact-page-form__input:focus, .contact-page-form__textarea:focus {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  outline: none;
+  font-weight: normal;
+}
+.contact-page-form__input:focus::placeholder, .contact-page-form__textarea:focus::placeholder {
+  opacity: 0;
+}
+.contact-page-form__textarea {
+  resize: none;
+  height: 9.375rem;
+}
+.contact-page-form__name-phone {
+  display: flex;
+  gap: 2rem;
+}
+.contact-page-form__required-text {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+.contact-page-form__checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.contact-page-form__checkbox-container .contact-page-form__checkbox-image {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+.contact-page-form__checkbox-container .contact-page-form__checkbox-text {
+  font-size: 1rem;
+}
+.contact-page-form__button {
+  width: 416px;
+  height: 76px;
+  background: #fa6400;
+  color: #ffffff;
+  border: 1px solid #fa6400;
+  border-radius: 3.75rem;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  transition: background 0.3s;
+  gap: 0.625rem;
+}
+.contact-page-form__button:hover {
+  background: #ffffff;
+  color: #fa6400;
+}
+
+.contactSection {
+  padding-top: 5rem;
+}
+.contactSection .contact-info {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+.contactSection .contact-info__title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.contactSection .contact-info__divider {
+  margin-bottom: 5rem;
+}
+.contactSection .contact-info__text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.contactSection .contact-info__text-and-link {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  align-items: center;
+}
+.contactSection .contact-info__text-and-link img {
+  width: 22.15px;
+  height: 22.15px;
+  position: absolute;
+  top: 22px;
+  cursor: pointer;
+}
+.contactSection .contact-info__text-and-link:hover {
+  color: #c75000;
+  border-color: #c75000;
+}
+.contactSection .contact-info__text-and-link:hover img {
+  filter: brightness(0.8);
+}
+
+.iconsDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem 0;
+}
+.iconsDiv img {
+  width: 75px !important;
+}
+.iconsDiv .linkedinIcons {
+  display: flex;
+  align-items: center;
+}
+.iconsDiv .linkedinIcons img {
+  position: static;
+}
+.iconsDiv .linkedinIcons :last-child {
+  display: block;
+  width: 60px;
+  margin-left: 1rem;
+}
+.iconsDiv .durationIcons {
+  display: flex;
+  align-items: center;
+}
+.iconsDiv .durationIcons img {
+  position: static;
+  margin-right: 1rem;
+}
+
+.unlearningDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unlearningDiv .purple-border {
+  background: #7323f4;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 25px;
+}
+.unlearningDiv .purple-border .bulb {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.unlearningDiv .purple-border .bulb img {
+  width: 75px;
+}
+.unlearningDiv .purple-border li {
+  list-style-type: circle !important;
+}
+.unlearningDiv .contact-form__button {
+  margin-top: 5rem;
+}
+
+.how-it-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 13.5rem;
+}
+.how-it-works__circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  text-align: center;
+  width: 14.8125rem;
+  height: 14.8125rem;
+}
+.how-it-works__circle img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.how-it-works__circle .big-span {
+  width: 7.75rem;
+  height: 6.75rem;
+}
+.how-it-works__circle--left, .how-it-works__circle--center, .how-it-works__circle--right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.how-it-works__text {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  z-index: 1;
+  text-align: center;
+}
+.how-it-works__line {
+  width: auto;
+  height: auto;
+}
+.how-it-works__line--left {
+  margin-right: -0.5rem;
+  margin-left: -0.5625rem;
+}
+.how-it-works__line--right {
+  margin-left: -0.4375rem;
+  margin-right: -0.5625rem;
+}
+
+.about-section__title {
+  padding-bottom: 7.5rem;
+  font-size: 3.5rem;
+  line-height: 4.25rem;
+}
+.about-section__text {
+  font-size: 32px !important;
+  line-height: 44px !important;
+}
+.about-section__trees {
+  margin-top: 5rem;
+  margin-bottom: 11.25rem;
+}
+
+.last-text {
+  padding-bottom: 7.5rem;
+}
+
+.flower-with-people {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flower-with-people img {
+  width: 100%;
+  height: auto;
+}
+.flower-with-people .flower-text {
+  position: absolute;
+  top: 63%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  width: 15.5%;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+
+.sectionThreeFlex>div {
+    flex-basis: 25%;
+    margin-right: var.$gutter-base;
+
+    h2 {
+        font-weight: var.$font-weight-normal;
+        color: var.$color-accent;
+        margin-bottom: math.div(var.$gutter-base, 2);
+    }
+}
+
+.sectionThree {
+    img {
+        margin-bottom: (var.$gutter-base);
+    }
+}

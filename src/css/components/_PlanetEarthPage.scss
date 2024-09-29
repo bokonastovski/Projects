@@ -1,0 +1,561 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+@keyframes bounce1 {
+  0%{
+    transform: scale(1.0);
+  }
+  50%{
+    transform: scale(1.3);
+  }
+  100%{
+    transform: scale(1.15);
+  }
+}
+@keyframes bounce2 {
+  0%{
+    transform: scale(1.15);
+  }
+  50%{
+    transform: scale(1.25);
+  }
+  100%{
+    transform: scale(1.15);
+  }
+}
+@keyframes bounce3 {
+  0%{
+    transform: scale(1.15);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1.15);
+  }
+}
+
+.butterflyImage{
+  position: absolute;
+  z-index: 40;
+  transition: transform 1s ease-in-out;
+  animation-fill-mode: both;
+  transform: scale(1.0);
+  cursor: pointer;
+
+  &:hover {
+    animation: bounce1 1s ease-in-out, bounce2 1s ease-in-out 1s, bounce3 1s ease-in-out 2s; /* Bounce 3 seconds infinitely */
+    transform: scale(1.15);
+  }
+}
+
+.treeButterflyComb{
+  position: absolute;
+  z-index: 30;
+  bottom: 0;
+}
+
+.outerPlanetEarthContainer {
+  width:  100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 100vh;
+  position: relative;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  .backgroundHome {
+    background-color: #82935d;
+    width: 80vw;
+    height: 100vh;
+
+    .backgroundLayer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+      width: 90vw;
+      z-index: 10;
+    }
+
+    .planetEarthHomeContent{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 95vw;
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      z-index: 20;
+    }
+
+    .logoContainer img{
+      width: 200px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .textContainer{
+      width: 45vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 50px;
+      color: white;
+      h1{
+        font-size: 70px;
+        font-weight: 400;
+      }
+      p{
+        font-size: 35px;
+        line-height: 50px;
+      }
+    }
+
+    .navigateContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      p{
+        font-size: 24px;
+        line-height: 35px;
+      }
+
+      @keyframes expandRetract {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2); /* Scale up to 120% */
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      img{
+        width: 50px;
+        height: auto;
+        animation: expandRetract 1.5s infinite ease-in-out;
+      }
+    }
+
+    .homeNote img{
+      width: 350px;
+      height: auto;
+    }
+  }
+
+  .slide {
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+    display: inline-block; 
+    white-space: normal;
+    top: -100vh;
+    left: calc(80vw);
+  }
+
+  .backgroundNumOne {
+    width: calc(3.601 * 100vh) !important;
+    background-image: url("../picturesFolder/planetEarthPictures/backgroundNumOne.png");
+    position: relative;
+
+    .treeCombOne{
+      left: 30%;
+
+      .butterflyImage{
+        bottom: 60%;
+        left: 30%;
+      }
+    }
+
+    .butterflyContainerHome1 {
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: 55%;
+      }
+    }
+
+    .butterflyLeft{
+      bottom: 40%;
+      left: 65%;
+    }
+
+    .treeCombTwo{
+      left: 77%;
+      bottom: 0%;
+
+      .butterflyImage{
+        bottom: 60%;
+        left: 50%;
+        transform: scale(0.8);
+      }
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+      }
+
+      .hedgehogImage{
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        z-index: -1;
+      }
+    }
+
+  }
+
+  .backgroundNumTwo {
+    width: calc(4.152 * 100vh) !important;
+    background-image: url("../picturesFolder/planetEarthPictures/backgroundNumTwo.png");
+    position: relative;
+
+    .noteSecondCont{
+      position: absolute;
+      top: 0;
+      left: 3%;
+    }
+
+    .rockButterflyComb{
+      position: absolute;
+      bottom: 0;
+      z-index: 30;
+    }
+
+    .rockCombOne{
+      left: 12%;
+      .rockImageOne{
+        transform: scale(1.1);
+      }
+      .ui-card{
+        position: absolute;
+        bottom: 110%;
+        left: 30%;
+        z-index: 1000;
+      }
+      .butterflyRockOne{
+        left: 40%;
+        bottom: 40%;
+      }
+    }
+
+    .treeCombThree{
+      left: 25%;
+
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        z-index: 1000;
+      }
+
+      .butterflyImage{
+        left: 50%;
+        bottom: 65%;
+        transform: scale(1.2);
+      }
+    }
+
+    .noteThirdCont{
+      position: absolute;
+      top: 0;
+      left: 46%;
+    }
+
+    .dirtButterflyComb{
+      position: absolute;
+      bottom: 30%;
+      left: 55%;
+
+      .ui-card{
+        position: absolute;
+        bottom: -130%;
+        left: -80%;
+        z-index: 1000;
+      }
+
+      .butterflyImage{
+        bottom: 0;
+        left: 20%;
+      }
+    }
+
+    .treeCombOne{
+      left: 65%;
+      
+      .butterflyImage{
+        bottom: 65%;
+        left: 27%;
+      }
+    }
+
+    .rockCombTwo{
+      left: 82%;
+      bottom: -3%;
+
+      .ui-card{
+        position: absolute;
+        bottom: 20%;
+        left: -40%;
+        z-index: 1000;
+      }
+
+      .rockImageTwo{
+        transform: scale(0.8);
+      }
+
+      .butterflyRockTwo{
+        bottom: 30%;
+        left: 30%;
+      }
+    }
+
+    .noteFourthCont{
+      position: absolute;
+      top: 13%;
+      left: 95%;
+      z-index: 50;
+      img{
+        transform: scale(2.7);
+      }
+    }
+  }
+
+  .backgroundNumThree {
+    width: calc(4.152 * 100vh) !important;
+    background-image: url("../picturesFolder/planetEarthPictures/backgroundNumThree.png");
+    position: relative;
+
+    .leavesCombOne{
+      position: absolute;
+      bottom: -8%;
+      left: 7%;
+
+      .leavesOne{
+        transform: scale(0.9);
+      }
+
+      .ui-card{
+        position: absolute;
+        bottom: 20%;
+        left: 80%;
+        z-index: 1000;
+      }
+
+      .butterflyImage{
+        bottom: 65%;
+        left: 13%;
+        transform: scale(1.2);
+      }
+    }
+
+    .noteFifthCont{
+      position: absolute;
+      top: 0%;
+      left: 20%;
+      z-index: 50;
+    }
+
+    .leavesCombTwo{
+      position: absolute;
+      bottom: 0%;
+      left: 55%;
+
+      .leavesTwo{
+        transform: scale(0.9);
+      }
+
+      .ui-card{
+        position: absolute;
+        bottom: 10%;
+        left: -70%;
+        z-index: 1000;
+      }
+
+      .butterflyImage{
+        bottom: 66%;
+        left: 15%;
+        transform: scale(1.3);
+      }
+    }
+
+    .leavesCombThree{
+      position: absolute;
+      bottom: -2%;
+      left: 72%;
+
+      .leavesThree{
+        transform: scale(0.8);
+      }
+
+      .newButterflyCont{
+        position: absolute;
+        bottom: 69%;
+        left: 17%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .ui-card{
+        position: absolute;
+        bottom: -150%;
+        left: 110%;
+        z-index: 1000;
+      }
+
+      .butterflyImage{
+        position: relative;
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  .backgroundNumFour {
+    width: calc(4.152 * 100vh) !important;
+    background-image: url("../picturesFolder/planetEarthPictures/backgroundNumFour.png");
+
+    position: relative;
+
+    .noteSixthCont{
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      z-index: 50;
+    }
+  }
+
+  .backgroundEnd{
+    width: calc(1.397 * 100vh) !important;
+    background-image: url("../picturesFolder/planetEarthPictures/backgroundEnd.png");
+    
+    position: relative;
+
+    .noteSeventhCont{
+      position: absolute;
+      top: 0%;
+      left: 20%;
+      z-index: 50;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.fadeInAnimation{
+  animation: fadeIn 1s ease-in-out;
+}
+.fadeOutAnimation{
+  animation: fadeOut 1s ease-in-out;
+}
+
+
+.ui-card {
+  position: absolute;
+  bottom: 7%;
+  left: -2%;
+  width: 250px;
+  background-color: #004c99;
+  color: white;
+  border-top-right-radius: 120px;
+  border-top-left-radius: 120px;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 20000;
+
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* Prevent interaction when not visible */
+}
+
+.ui-card.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto; /* Enable interaction when visible */
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 110px 110px 0 0;
+}
+
+.card-content {
+  position: relative;
+}
+
+.card-content h2 {
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.card-content p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: -22%;
+  right: 0%;
+  cursor: pointer;
+}
+
+.watch-button {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.watch-button:hover {
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}

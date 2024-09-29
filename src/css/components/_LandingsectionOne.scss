@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as var;
+
+section {
+    margin-bottom: var.rem-calc(160);
+    margin-top: var.rem-calc(160);
+}
+
+.sectionTitle {
+    font-weight: var.$font-weight-normal;
+    font-size: var.$heading-size-big;
+    margin-bottom: var.$gutter-base;
+}
+
+.sectionOne,
+.treeContainer {
+    display: flex;
+}
+
+.sectionOne {
+    align-items: center;
+}
+
+.flexWrapper {
+    flex-basis: 50%;
+}
+
+.sectionOneLeftPart {
+    margin-right: var.$gutter-base;
+    padding-right: var.$gutter-base;
+
+}
+
+.sectionOneLeftPart>p {
+    margin-bottom: var.$gutter-base;
+    line-height: var.rem-calc(30);
+}
+
+.sectionOneRightPart {
+    color: var.$color-accent;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    p {
+        margin-bottom: var.$gutter-base;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.treeContainer {
+    align-items: baseline;
+    justify-content: space-between;
+}

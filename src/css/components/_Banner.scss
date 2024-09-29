@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as var;
+
+.banner {
+    color: var.$text-color-base;
+    background-color: var.$background-color-primary;
+    padding: var.rem-calc(20) var.rem-calc(40);
+    text-align: center;
+    font-weight: var.$font-weight-bold;
+    font-size: var.$heading-size-tiny;
+}

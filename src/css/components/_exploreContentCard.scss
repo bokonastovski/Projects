@@ -1,0 +1,35 @@
+.exploreContent {
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 0.5px solid #ffffff;
+  img {
+    width: 75px;
+  }
+  .content {
+    width: 75%;
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+    .p-bold {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .p-small {
+      font-size: 12px;
+      margin-bottom: 1rem;
+    }
+  }
+  .card-btn {
+    background-color: transparent;
+    border: 1px solid #fa6400;
+    color: #fa6400;
+    padding: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .card-btn:hover {
+    background-color: white;
+  }
+}

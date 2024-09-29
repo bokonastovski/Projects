@@ -1,0 +1,133 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.carouselSection {
+
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding-bottom: var.$gutter-base;
+    }
+
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carouselTitleAndControls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var.$gutter-base;
+    }
+
+
+    .carouselControls {
+        margin-top: var.$gutter-base;
+    }
+
+    .carouselPrev,
+    .carouselNext {
+        background-color: transparent;
+        border: 1px solid var.$color-accent;
+        color: var.$color-accent;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        font-size: var.$font-size-medium;
+        margin-right: 10px;
+        margin-bottom: var.$gutter-base;
+    }
+
+    .carouselPrev:hover,
+    .carouselNext:hover {
+        color: white;
+        border-color: white;
+    }
+
+    .carouselCard {
+        flex: 0 0 auto;
+        position: relative;
+        background-color: white;
+        border-radius: 200px 200px 0 0;
+        width: 392px;
+        height: 528px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease, filter 0.3s ease;
+
+        &:not(:last-child) {
+            margin-right: math.div(var.$gutter-base, 2);
+        }
+
+        &.blur {
+            filter: blur(5px);
+            transform: scale(0.95);
+        }
+    }
+
+    .iconWrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flowerIcon {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cardBody {
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65%;
+        padding-top: var.$gutter-base;
+
+        h3,
+        p {
+            margin-bottom: var.$gutter-base;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .moreBtn {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        align-self: center;
+        background-color: transparent;
+        border: 1px solid var.$color-accent;
+        color: var.$color-accent;
+        width: 188px;
+        border-radius: var.rem-calc(60);
+        padding: var.rem-calc(10) var.rem-calc(20);
+        font-size: var.rem-calc(16);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var.$color-accent;
+            color: white;
+        }
+    }
+}

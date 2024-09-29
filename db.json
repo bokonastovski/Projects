@@ -1,0 +1,67 @@
+{
+  "content": [
+
+    {
+      "id": 1,
+      "slash": "rita-isiba-intersectionalism",
+      "type": "video",
+      "duration": "01:29 mins",
+      "guest": "rita isiba",
+      "topic": "intersectionalism",
+      "smallDescription": "I often hear “but we cant accommodate everyone's differences!” says Rita Isiba in this video, explaining the different facets of diversity and inclusion.",
+      "videoUrl": "https://player.vimeo.com/video/904500825?h=731336b420"
+    },
+    {
+      "id": 2,
+      "type": "podcast",
+      "slash": "marta-etienne-future-of-work-there-has-to-be-another-way",
+      "duration": "01:29 mins",
+      "guest": "marta etienne",
+      "topic": "future of work: there has to be another way",
+      "smallDescription": "I often hear “but we cant accommodate everyone’s differences!” says Rita Isiba in this video, explaining the different facets of diversity and inclusion.",
+      "podcastUrl": "https://embed.podcasts.apple.com/za/podcast/she-rocks-meets-marta-etienne-and-together-we/id1521021389?i=1000625344539",
+      "description": "In this episode, you’ll meet Marta - the godmother of She Rocks Global. Marta is a true connector and enabler of global communities. Find out about how she has been so special to She Rocks Global and learn about what makes her rock",
+      "imgUrl": "/images/imageOnPodcast.png",
+      "reason": "“She Rocks meets Marta Etienne” is showcasing an unique conversation that arises when environmental campaigning and mental resilience are combined. This episode is a call to action and a reminder that the sustainability movement is nourished not only by the careful design of environmental projects but also by the conscientious attention we pay to our personal health."
+    },
+    {
+      "id": 3,
+      "type": "article",
+      "duration": "01:29 mins",
+      "slash": "pour-equality-women-redefining-industries-intersectionalism",
+      "guest": "pour equality: women redefining industries",
+      "topic": "intersectionalism",
+      "smallDescription": "I often hear “but we cant accommodate everyone's differences!” says Rita Isiba in this video, explaining the different facets of diversity and inclusion.",
+      "imgUrl": "/images/imageOnVideo.png",
+      "description": "In today’s fast-paced corporate world, sustaining employee happiness goes beyond traditional perks. It requires a holistic approach that prioritizes well-being, growth, and environmental responsibility. From fostering a culture of inclusivity and support to implementing eco-friendly initiatives, creating sustainable happiness among employees is both an art and a science.",
+      "paragraph1": "To begin, companies must cultivate a positive work environment that promotes work-life balance and mental health support. Flexible work arrangements, wellness programs, and access to counselling services are essential components. Additionally, investing in employee development and offering opportunities for skill enhancement can enhance job satisfaction and overall happiness.",
+      "paragraph2": "Furthermore, integrating sustainability practices into the workplace can significantly impact employee morale. Initiatives such as reducing carbon footprint, promoting recycling programs, and supporting ethical sourcing contribute to a sense of purpose and pride among employees. By aligning organizational values with sustainable practices, companies can inspire greater employee engagement and loyalty.",
+      "cta": "<bold>Conduct an Employee Well-being Assessment:</bold>Start by evaluating the current state of employee happiness and well-being in your organization. Gather feedback through surveys, focus groups, or one-on-one interviews to identify areas for improvement.<gap><bold>Implement Sustainable Happiness Initiatives:</bold> Based on the assessment findings, develop, and implement tailored strategies to enhance employee well-being while incorporating sustainability principles. This could include introducing flexible work arrangements, organizing wellness workshops, or launching eco-friendly initiatives.",
+      "elements": "Why this article? This article explores the intersection of employee happiness and sustainability, offering actionable insights for creating a positive workplace culture.",
+      "reads": "The Happiness Advantage – Shawn Achor <br> Sustainable Happiness – Sarah van Gelder."
+    },
+    {
+      "id": 4,
+      "slash": "rita-ada-diversity-in-austria",
+      "type": "video",
+      "duration": "01:17 mins",
+      "guest": "rita ada",
+      "topic": "diversity in austria",
+      "smallDescription": "I often hear “but we cant accommodate everyone's differences!” says Rita Isiba in this video, explaining the different facets of diversity and inclusion.",
+      "videoUrl": "https://player.vimeo.com/video/904503167"
+    },
+    {
+      "id": 5,
+      "type": "podcast",
+      "duration": "01:29 mins",
+      "slash": "larger-world-team-future-of-work-there-has-to-be-another-way",
+      "guest": "larger.world team",
+      "topic": "future of work: there has to be another way",
+    "smallDescription": "I often hear “but we cant accommodate everyone’s differences!” says Rita Isiba in this video, explaining the different facets of diversity and inclusion.",
+    "podcastUrl": "https://embed.podcasts.apple.com/us/podcast/she-rocks-meets-leonie-joubert/id1623542801?i=1000560444152&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto",
+    "description": "In this podcast episode, Leonie Joubert navigates the balance of maintaining mental health while passionately advocating for the climate crisis and sustainability. This episode looks into the complexities of mental well-being in the realm of environmental advocacy, addressing the highs and lows of the journey. A profound and insightful episode for everyone who pays attention to mental health.",
+    "imgUrl": "/images/imageOnPodcast.png",
+    "reason": "“She Rocks meets Leonie Joubert” is showcasing an unique conversation that arises when environmental campaigning and mental resilience are combined. This episode is a call to action and a reminder that the sustainability movement is nourished not only by the careful design of environmental projects but also by the conscientious attention we pay to our personal health."
+  }
+]
+}

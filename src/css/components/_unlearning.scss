@@ -1,0 +1,25 @@
+.unlearningDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .purple-border {
+    background: #7323f4;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 25px;
+    .bulb {
+      display: flex;
+      margin-bottom: 2rem;
+      img {
+        width: 75px;
+      }
+    }
+    li {
+      list-style-type: circle !important;
+    }
+  }
+  .contact-form__button {
+    margin-top: 5rem;
+  }
+}

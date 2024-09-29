@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as var;
+
+.contactSection {
+  padding-top: (var.$gutter-base * 2);
+
+  .contact-info {
+    padding-bottom: var.rem-calc(40);
+    margin-bottom: var.rem-calc(40);
+    color: var.$color-text-light;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 40px;
+
+    &__title {
+      font-size: var.rem-calc(56);
+      font-weight: 400;
+      padding-bottom: var.rem-calc(16);
+    }
+
+    &__divider {
+      margin-bottom: var.rem-calc(80);
+    }
+
+    &__text {
+      font-size: var.rem-calc(20);
+      line-height: 1.6;
+      color: var.$color-text-light;
+    }
+
+    &__text-and-link {
+      padding: 20px 0;
+      display: flex;
+      gap: 20px;
+      position: relative;
+      align-items: center;
+
+      img {
+        width: 22.15px;
+        height: 22.15px;
+        position: absolute;
+        top: 22px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        color: darken(var.$color-accent, 10%);
+        border-color: darken(var.$color-accent, 10%);
+
+        img {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}

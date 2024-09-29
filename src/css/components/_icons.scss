@@ -1,0 +1,28 @@
+.iconsDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem 0;
+  img {
+    width: 75px !important;
+  }
+  .linkedinIcons {
+    display: flex;
+    align-items: center;
+    img {
+      position: static;
+    }
+    :last-child {
+      display: block;
+      width: 60px;
+      margin-left: 1rem;
+    }
+  }
+  .durationIcons {
+    display: flex;
+    align-items: center;
+    img {
+      position: static;
+      margin-right: 1rem;
+    }
+  }
+}

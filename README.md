@@ -1,22 +1,73 @@
-<h1 align="center">
-        <samp>&gt; Hey There!, I am
-                <b>Borjan Nastovski</b>
-        </samp>
-</h1>
+# Hackathon 02 - Larger.World
 
-<p align="center"> 
-  <samp>
-    <br>
-    「 I am a front-end developer student from <b>Macedonia</b> 」
-    <br>
-    <br>
-  </samp>
+## Overview
+
+The **Larger.World** website introduces users to the concept of unlearning and its impact on creating a more sustainable and inclusive world. The design and content are aimed at inspiring users to explore the platform's resources and join the community. Rounded visual elements, inspired by the logo, were used to maintain compliance with brand guidelines.
+
+## Team Collaboration
+
+This project was a collaborative effort by a group of four front-end developers, including myself. Together, we worked on different aspects of the website to ensure a seamless and engaging user experience.
+
+## My Contribution
+
+I was responsible for:
+
+- **Database Creation:** Developed the database for the podcast, article, and video pages, ensuring that the data structure met the project’s requirements.
+- **Feature Implementation:** Implemented features for the article, podcast, and video pages, allowing users to browse and interact with the content.
+
+## Features
+
+- **Podcast Section:**
+
+  - Browse and listen to various podcasts related to sustainability and inclusiveness.
+  - Access podcast descriptions and view the related resources.
+
+- **Article Section:**
+
+  - Read articles that encourage users to rethink traditional practices and explore unlearning.
+  - Comment and share insights on articles.
+
+- **Video Section:**
+  - Watch videos that align with the platform’s mission of promoting a better world through unlearning.
+  - Comment on videos to engage with the community.
+
+## Starting the Server
+
+1. **Install Dependencies:**
+   Ensure all dependencies are installed by running the following command:
+
+   ```bash
+   npm install
+   ```
+
+2. **Start the Development Server:**
+   Use the following command to start the development server:
+
+```bash
+npm run dev
+```
+
+3. **Run the JSON Server:**
+   To run the JSON server for the database, use this command:
+   ```bash
+   json-server --watch db.json --port 5000
+   ```
+   The application will now be accessible locally at http://localhost:3000 and the JSON server at http://localhost:5000.
+
+## Support
+
+If you encounter any issues or have questions, please consult the documentation or contact support for assistance.
+」
+<br>
+<br>
+</samp>
+
 </p>
 
 <details>  
   <ol>
     <li><a href="#about-me">About Me</a></li>
-    <li><a href="#languages">Coding Languages and Source-Code Editors</a></li>
+    <li><a href="#languages">Languages & Source-Code Editors</a></li>
     <li><a href="#about-the-project">About the projects</a></li>
   </ol>
 </details>
@@ -43,17 +94,15 @@
 <br/>
 <br/>
 
-<h2 id="languages">Coding Languages and Source-Code Editors</h2>
+<h2 id="languages">Languages & Source-Code Editors</h2>
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)<br>
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)<br>
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)<br>
-![Javascript](https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)<br>
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)<br>
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)<br>
-![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)<br>
-![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)<br>
-![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)<br>
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Javascript](https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 <br/>
@@ -66,8 +115,5 @@ This repo contains all the projects I worked on as a student at the Brainster Pr
 
 Some of my projects are already live. So feel free to check them out on the following links below.
 
-- [Project 01 - Brainster Labs]()
-- [Project 02 - Safe Blink]()
-- [Project 03 - МЧРА - MHRA]()
-- [Hackaton 01 - Sava Osiguruvanje]()
-- [Hackaton 02 - Larger.World]()
+- [Project 01 - Brainster Labs](https://github.com/bokonastovski/projects-1/tree/01_BrainsterLabs)
+- [Hackaton 01 - Sava Osiguruvanje](https://github.com/bokonastovski/projects-1/tree/Hackaton01-SavaOsiguruvanje)

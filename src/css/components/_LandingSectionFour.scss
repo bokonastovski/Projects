@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as var;
+
+.sectionFour {
+
+
+    h3 {
+        font-weight: var.$font-weight-normal;
+    }
+
+    hr {
+        margin: var.rem-calc(5) 0;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .leftContainer {
+        margin-right: var.$gutter-base;
+    }
+
+    .childContainerLeft {
+        flex-basis: 40%;
+
+    }
+
+    .childContainerRight {
+        flex-basis: 60%;
+
+        li {
+            list-style-type: disc;
+            line-height: 30px;
+        }
+    }
+
+    .lastHr {
+        margin-bottom: var.$gutter-base;
+    }
+
+}

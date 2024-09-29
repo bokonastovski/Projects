@@ -1,0 +1,23 @@
+.videoSection {
+  width: 80%;
+  margin: 0 auto;
+  .video-iframe {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    border: none !important;
+  }
+  .podcastDesc {
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #ffffff;
+  }
+  .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+  .newsletter__content {
+    width: 100%;
+  }
+}

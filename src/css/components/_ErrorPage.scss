@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var.$color-background-dark;
+}
+
+.error-content {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    background-color: var.$color-background-dark;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(115, 35, 244, 0.1)
+}
+
+.error-content h1 {
+    font-size: var.$heading-size-bigger;
+    margin: var.$gutter-base;
+    color: var.$color-accent;
+}
+
+.error-content h2 {
+    font-size: var.$heading-size-small;
+    font-weight: var.$font-weight-normal;
+    margin: var.$gutter-base 0;
+}
+
+.error-content p {
+    margin-bottom: var.$gutter-base;
+}

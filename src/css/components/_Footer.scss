@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as var;
+
+footer {
+    text-align: center;
+
+    .footerWrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .footerWrap.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .footerWrap>div {
+        padding-top: var.rem-calc(20);
+        font-size: var.$font-size-base;
+        flex: 1 1 33.333%;
+        align-content: center;
+        background-color: rgba(115, 35, 244, 1);
+        height: 300px;
+        border-radius: 300px 300px 0 0;
+    }
+
+    .footerLink {
+        color: var.$color-text-light;
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: var.rem-calc(16);
+        }
+
+        &:hover {
+            color: var.$color-accent;
+        }
+    }
+
+    .footerWrap>div>img {
+        max-width: 150px;
+    }
+
+    .copyRights {
+        background-color: rgba(115, 35, 244, 1);
+        padding-top: var.rem-calc(16);
+    }
+
+    p {
+        margin: var.rem-calc(16) 0;
+        font-size: var.$font-size-small;
+    }
+
+    img {
+        max-width: 50% !important;
+    }
+}
