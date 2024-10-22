@@ -1,0 +1,61 @@
+.homepage-moduls {
+  padding: 4rem 0;
+  width: 70%;
+  margin: 0 auto;
+
+  h3 {
+    text-align: center;
+    color: #ff6130;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .boxes {
+    display: flex;
+    gap: 1rem;
+
+    .box {
+      border: 4px solid;
+      border-radius: 10px;
+
+      h1 {
+        font-size: 1.75rem;
+        color: white;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-bottom: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 1.1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1rem;
+      }
+      button {
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+      }
+    }
+
+    .green-box {
+      color: #028661;
+      h1 {
+        background-color: #028661;
+      }
+      button {
+        background-color: #028661;
+      }
+    }
+    .purple-box {
+      color: #721c7a;
+      h1 {
+        background-color: #721c7a;
+      }
+      button {
+        background-color: #721c7a;
+      }
+    }
+  }
+}

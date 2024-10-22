@@ -1,0 +1,132 @@
+.dashboard-profile-certificate {
+  margin-top: 40px;
+  font-family: "Inter", sans-serif;
+
+  h3 {
+    margin-left: 0 !important;
+  }
+}
+
+.dashboard-profile-certificate-title {
+  position: relative;
+}
+
+.dashboard-certif-container {
+  margin-top: 20px;
+}
+
+.dashboard-certif {
+  display: flex;
+  padding: 36px 21px;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.certif-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+  align-self: stretch;
+
+  h4,
+  p {
+    color: #212121;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    align-self: stretch;
+  }
+}
+
+.certif-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  width: 100%;
+  h3 {
+    color: #6cd99c;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
+
+.certif-icons {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  a {
+    cursor: pointer;
+
+    img {
+      &:hover {
+        border: 2px solid #212121;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.dashboard-profile-badges {
+  margin-top: 40px;
+}
+
+.dashboard-badges-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 27px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.dashb-b-c-2 {
+  margin-top: 5px;
+}
+
+.dashb-opacity {
+  color: #a2b6c9 !important;
+  line-height: 40px !important;
+}
+
+.dashb-lh {
+  line-height: 40px !important;
+}
+
+.dashboard-prof-badge {
+  display: flex !important;
+  padding: 16px !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex: 1 0 0 !important;
+  align-self: stretch !important;
+  height: 250px !important;
+}
+
+.dash-badge-title {
+  margin-left: 0;
+}
+
+.dashb-b-info {
+  position: absolute;
+  right: -3.8%;
+  top: 1%;
+}

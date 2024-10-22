@@ -1,0 +1,101 @@
+.dashboard-last-cards {
+  display: inline-flex;
+  height: 440px;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+  font-family: "Inter", sans-serif;
+  margin-top: 40px;
+}
+
+.dashboard-last-card {
+  display: flex;
+  width: 327px;
+  height: 327px;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  background: #f1f5f7;
+}
+
+.dashboard-last-card-content {
+  display: flex;
+  width: 100%;
+  height: 291px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 55px;
+  flex-shrink: 0;
+}
+
+.dashboard-last-card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  color: #212121;
+
+  h3 {
+    align-self: stretch;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 72px;
+    align-self: stretch;
+    z-index: 4;
+  }
+}
+
+.scratch-9 {
+  position: absolute;
+  left: -38.848px;
+  bottom: -73.312px;
+}
+
+.dashboard-last-btn {
+  position: absolute;
+  left: 24px;
+  bottom: 25%;
+  border: none;
+  z-index: 5;
+}
+
+.dashboard-bg-teal {
+  background: #02a3a4 !important;
+  border: 1px solid #02a3a4 !important;
+}
+
+.dashboard-bg-purple {
+  background: #721c7a !important;
+  border: 1px solid #721c7a !important;
+}
+
+.dashboard-last-card-circles {
+  position: absolute;
+  bottom: 8%;
+}
+
+.dashboard-last-card-days {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  p {
+    color: #2870ed;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  padding: 3rem 10% 0;
+  border-top: 1px solid black;
+
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    ul {
+      display: flex;
+
+      li {
+        list-style-type: none;
+
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
+      }
+    }
+    .social-icons {
+      display: flex;
+
+      a {
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    p {
+      text-align: center;
+      color: #2870ed;
+    }
+  }
+}

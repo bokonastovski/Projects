@@ -1,0 +1,33 @@
+.register {
+  background-color: #2870ed;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .escape-sign {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    cursor: pointer;
+  }
+
+  .scratch-1 {
+    position: absolute;
+    top: -3%;
+    left: -3%;
+    width: 15%;
+    transform: rotate(260deg);
+  }
+  .scratch-2 {
+    position: absolute;
+    bottom: -3%;
+    right: -3%;
+    width: 15%;
+    transform: rotate(260deg);
+  }
+  .escape {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+}

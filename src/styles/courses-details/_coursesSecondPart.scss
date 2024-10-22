@@ -1,0 +1,46 @@
+.courses-second-part {
+  display: flex;
+  .left {
+    flex-basis: 70%;
+    background-color: #eb4c79;
+    position: relative;
+    .content {
+      margin-top: 10rem;
+      margin-left: 2rem;
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+      padding: 3rem 15% 7.5rem;
+      color: white;
+      border-radius: 50px 0 0;
+      h1 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: -15%;
+      width: 20%;
+    }
+  }
+  .right {
+    flex-basis: 30%;
+    background-color: #721c7a;
+    .content {
+      margin-top: 10rem;
+      margin-right: 2rem;
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+      border-radius: 0 50px 0;
+      padding: 10rem 5rem 5rem 2rem;
+
+      p {
+        color: white;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "sparkasse_project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\" \"npm run sass\"",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "server": "json-server --watch db.json --port 5001",
+    "sass": "sass --watch styles/scss:styles/css"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.4",
+    "@mui/material": "^6.1.4",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.80.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "concurrently": "^9.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "json-server": "^1.0.0-beta.3",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,133 @@
+.homepage-middle {
+  height: 100vh;
+  display: flex;
+  .part-75 {
+    flex-basis: 75%;
+
+    display: flex;
+    flex-direction: column;
+    .top {
+      display: flex;
+      height: 50vh;
+      .purple-box {
+        flex-basis: 33.333%;
+        background-color: #721c7a;
+      }
+      .orange-box {
+        flex-basis: 33.333%;
+        background-color: #ff6130;
+        color: white;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .number {
+          padding-top: 2rem;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        .content {
+          padding-bottom: 1rem;
+          width: 90%;
+          h2 {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+      .white-box {
+        background-color: white;
+        flex-basis: 33.333%;
+        color: #2870ed;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .number {
+          padding-top: 2rem;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        .content {
+          padding-bottom: 1rem;
+          width: 100%;
+          h2 {
+            font-size: 1.9rem;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .bottom {
+      flex-basis: 50vh;
+      display: flex;
+
+      .white-box {
+        flex-basis: 66.666%;
+        color: #2870ed;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        img {
+          position: absolute;
+          right: -15%;
+          top: -30%;
+          width: 40%;
+          z-index: -1;
+        }
+        .number {
+          padding-top: 2rem;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        .content {
+          padding-bottom: 1rem;
+          width: 70%;
+          h2 {
+            font-size: 1.9rem;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+      .green-box {
+        flex-basis: 33.333%;
+        background-color: #02a3a4;
+        position: relative;
+
+        p {
+          color: white;
+          font-size: 7rem;
+          position: absolute;
+          bottom: 1rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  .part-25 {
+    flex-basis: 25%;
+    position: relative;
+
+    .girl-piggybank {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80%;
+    }
+    .scratch {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+}

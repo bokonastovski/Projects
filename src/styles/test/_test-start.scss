@@ -1,0 +1,35 @@
+.test-start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  img {
+    margin: 0 auto;
+    width: 20%;
+    padding-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  p {
+    line-height: 40px;
+  }
+
+  button {
+    text-align: center;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: #ff6130;
+    cursor: pointer;
+  }
+}

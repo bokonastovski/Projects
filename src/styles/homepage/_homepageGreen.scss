@@ -1,0 +1,36 @@
+.homepage-green {
+  padding: 3rem 0;
+  background-color: #02a3a4;
+  position: relative;
+  overflow: hidden;
+
+  .content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      color: white;
+      padding-bottom: 1.5rem;
+    }
+    button {
+      background-color: #721c7a;
+    }
+  }
+  .scratch {
+    position: absolute;
+    top: -35%;
+    width: 20%;
+  }
+  .scratch-1 {
+    left: -5%;
+  }
+  .scratch-2 {
+    right: -5%;
+  }
+  .guy-on-card {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 17%;
+  }
+}

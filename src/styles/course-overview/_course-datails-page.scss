@@ -1,0 +1,110 @@
+.course-page-list {
+  .btn-wrapper {
+    width: 70%;
+    margin: 2rem 0;
+    .nextBtn {
+      display: block;
+      margin: 0 auto;
+      border: 2px solid #0cb43f;
+      color: white;
+      background-color: #0cb43f;
+      padding: 0.5rem 2rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+  .section {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    gap: 5%;
+  }
+  margin-top: 2rem;
+  .left-side {
+    padding: 2rem;
+    border: 2px solid #ff6130;
+    border-radius: 8px;
+    audio {
+      width: 100%;
+    }
+
+    .part1 {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 60% 30%;
+      gap: 10%;
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+      }
+      img {
+        width: 60%;
+      }
+    }
+    .part2 {
+      margin-top: 2rem;
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .part3 {
+      margin: 2rem 0;
+      border-radius: 8px;
+      color: white;
+      padding: 1rem;
+      background-color: #245375;
+    }
+    .part4 {
+      img {
+        width: 100%;
+      }
+    }
+    .part5 {
+      margin-top: 2rem;
+      p {
+        font-size: 16px;
+      }
+    }
+    .partorange {
+      padding: 1rem;
+      color: #ff6130;
+      font-weight: bold;
+    }
+  }
+  .right-side {
+    .sodrzina {
+      background-color: #ff6130;
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      .css-12eb3rq-MuiStepLabel-label.Mui-active,
+      .css-12eb3rq-MuiStepLabel-label {
+        color: white;
+      }
+      img {
+        margin: 0 auto;
+      }
+    }
+    .key-skills {
+      h1 {
+        margin-bottom: 1rem;
+      }
+
+      button {
+        border-radius: 8px;
+        background-color: #e4eaf0;
+        outline: none;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.dashboard-navbar {
+  display: flex;
+  width: 100%;
+  height: 96px;
+  padding: 0 40px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 92px;
+  border-radius: 0px 0px 8px 8px;
+  background: #2870ed;
+  position: fixed;
+  z-index: 10;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.dashboard-navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.dashboard-navbar-searchbar {
+  display: flex;
+  width: 400px;
+  padding: 10px 0px 10px 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid #f1f5f7;
+
+  .dashboard-navbar-search {
+    flex-shrink: 0;
+  }
+
+  .search-input {
+    all: unset;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+.dashboard-navbar-profile {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-navbar-notification {
+  margin-right: 24px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+
+  img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+.profile-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    line-height: 24px;
+  }
+
+  .profile-name {
+    margin-top: 1px;
+    font-size: 18px;
+    font-weight: 700;
+    align-self: stretch;
+  }
+
+  .profile-title {
+    margin-top: -2px;
+    font-size: 14px;
+    font-weight: 500;
+    align-self: stretch;
+  }
+}

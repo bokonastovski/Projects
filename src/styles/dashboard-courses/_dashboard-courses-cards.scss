@@ -1,0 +1,94 @@
+.dashboard-courses-cards {
+  margin-top: 40px;
+}
+
+.dashboard-courses-cards-title {
+  color: #212121;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 20px;
+  margin-left: -8px;
+}
+
+.dashboard-card-2 {
+  height: 353.4px;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.progress-percentage {
+  margin-left: 225px;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 268.45px;
+  height: 6px;
+  flex-shrink: 0;
+  height: 10px;
+  border-radius: 5px;
+  background: #eceff5;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #6dd7a9 !important;
+  border-radius: 5px;
+  width: 35%;
+  z-index: 2;
+}
+
+.progress-percentage {
+  color: #666;
+  font-size: 14px;
+  z-index: 3;
+}
+
+.dashboard-cards-title-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard-cards-arrows {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.dashboard-courses-cards-pink {
+  border: 2px solid #eb4c79 !important;
+  background: #eb4c79 !important;
+}
+
+.bg-none {
+  background: none;
+}
+
+.margin-left-5 {
+  margin-left: -10px;
+}
+
+.btn-pink-left-courses {
+  border: 2px solid #eb4c79 !important;
+  background-color: transparent !important;
+}

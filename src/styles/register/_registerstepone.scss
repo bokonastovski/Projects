@@ -1,0 +1,118 @@
+.register-content {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 3rem;
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding-bottom: 1.5rem;
+
+    .active {
+      background-color: #ff6130 !important;
+    }
+
+    .step {
+      height: 10px;
+      background-color: #ffad91;
+
+      border-radius: 8px;
+    }
+  }
+
+  .logo {
+    margin: 0 auto;
+    padding-bottom: 3.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .vibe {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #ff6130;
+
+    &::placeholder {
+      color: #ff6130;
+    }
+  }
+
+  .error {
+    color: white;
+    padding-bottom: 1rem;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    background-color: #ff6130;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .or {
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .icons {
+    text-align: center;
+    padding-bottom: 1rem;
+    img {
+      display: inline-block;
+
+      &:not(:first-child) {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .new-user {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    span {
+      color: #ff6130;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+.scratch-one-a {
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 20%;
+}
+.scratch-one-b {
+  position: absolute;
+  bottom: -10%;
+  right: -5%;
+  width: 20%;
+}
