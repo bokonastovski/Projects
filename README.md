@@ -36,7 +36,7 @@ The primary goal of "VibeOn Edu" is to provide a comprehensive, engaging platfor
 
 ## Hackathon Project
 
-This project was developed during a hackathon with a team of 14 colleagues. I worked alongside another front-end developer to bring the platform to life. The design was created in Figma, and we collaborated closely with the backend team to fully implement the platform's features.
+This project was developed during a hackathon with a team of 12 colleagues. I worked alongside another front-end developer to bring the platform to life. The design was created in Figma, and we collaborated closely with the backend team to fully implement the platform's features.
 
 ### My Contributions:
 
