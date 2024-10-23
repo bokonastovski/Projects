@@ -1,5 +1,3 @@
-import React from "react";
-import ContactForm from "../components/ContactForm";
 import Newsletter from "../components/NewsLetter";
 import linkedInIcon from "../picturesFolder/contactPage/linkedin2.png";
 import ContactPageForm from "../components/ContactPageForm";

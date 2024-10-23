@@ -1,11 +1,5 @@
-import React from 'react'
-
 const ExplorePage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default ExplorePage
+export default ExplorePage;
