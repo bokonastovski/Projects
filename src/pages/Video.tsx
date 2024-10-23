@@ -11,7 +11,7 @@ import { VideoContentProps } from "../types";
 const Video: React.FC = () => {
   const { slash } = useParams<{ slash: string }>();
   const [videoContent, loading, error] = useFetchContent<VideoContentProps[]>(
-    "http://localhost:5001/content"
+    "https://json-server-api-hxfu.onrender.com/content"
   );
   console.log(slash);
 

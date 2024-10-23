@@ -13,7 +13,7 @@ const Podcast: React.FC = () => {
   const { slash } = useParams<{ slash: string }>();
   const [podcastContent, loading, error] = useFetchContent<
     PodcastContentProps[]
-  >("http://localhost:5001/content");
+  >("https://json-server-api-hxfu.onrender.com/content");
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;

@@ -13,7 +13,7 @@ const Article: React.FC = () => {
   const { slash } = useParams<{ slash: string }>();
   const [articleContent, loading, error] = useFetchContent<
     ArticleContentProps[]
-  >("http://localhost:5001/content");
+  >("https://json-server-api-hxfu.onrender.com/content");
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;

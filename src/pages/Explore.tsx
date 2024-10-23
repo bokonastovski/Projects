@@ -11,7 +11,7 @@ import Newsletter from "../components/NewsLetter";
 
 const Explore: React.FC = () => {
   const [allContent, loading, error] = useFetchContent<ExploreContentProps[]>(
-    "http://localhost:5001/content"
+    "https://json-server-api-hxfu.onrender.com/content"
   );
 
   const [filteredContent, setFilteredContent] = React.useState<
