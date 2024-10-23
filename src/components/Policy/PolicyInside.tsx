@@ -4,6 +4,7 @@ import { useState } from "react";
 import PolicyTable from "./PolicyTable";
 
 interface PolicyData {
+  id: string;
   type: string;
   policyNo: string;
   packet: string;
@@ -18,6 +19,7 @@ interface PolicyData {
 
 const rows: PolicyData[] = [
   {
+    id: "asd123asdasd",
     type: "Bike",
     policyNo: "PO-123456",
     packet: "",
@@ -30,6 +32,7 @@ const rows: PolicyData[] = [
     status: "active",
   },
   {
+    id: "asdasdamsd",
     type: "Car",
     policyNo: "PO-123457",
     packet: "",
@@ -42,6 +45,7 @@ const rows: PolicyData[] = [
     status: "inactive",
   },
   {
+    id: "asdasdasdh",
     type: "Bag",
     policyNo: "PO-123458",
     packet: "",
@@ -54,6 +58,7 @@ const rows: PolicyData[] = [
     status: "active",
   },
   {
+    id: "asdasdasqd",
     type: "Bike",
     policyNo: "PO-123459",
     packet: "",
@@ -66,6 +71,7 @@ const rows: PolicyData[] = [
     status: "inactive",
   },
   {
+    id: "asdasda1sd",
     type: "Bag",
     policyNo: "PO-123460",
     packet: "",
@@ -78,6 +84,7 @@ const rows: PolicyData[] = [
     status: "active",
   },
   {
+    id: "asdavsdasd",
     type: "Bike",
     policyNo: "PO-123461",
     packet: "",
@@ -90,6 +97,7 @@ const rows: PolicyData[] = [
     status: "inactive",
   },
   {
+    id: "asdasd12asd",
     type: "Car",
     policyNo: "PO-123462",
     packet: "",
@@ -102,6 +110,7 @@ const rows: PolicyData[] = [
     status: "active",
   },
   {
+    id: "asdasdasdvb",
     type: "Bag",
     policyNo: "PO-123463",
     packet: "",
@@ -114,6 +123,7 @@ const rows: PolicyData[] = [
     status: "inactive",
   },
   {
+    id: "as3dasdasd",
     type: "Bike",
     policyNo: "PO-123464",
     packet: "",
@@ -126,6 +136,7 @@ const rows: PolicyData[] = [
     status: "active",
   },
   {
+    id: "asdasdas0d",
     type: "Bag",
     policyNo: "PO-123465",
     packet: "",
@@ -138,6 +149,7 @@ const rows: PolicyData[] = [
     status: "inactive",
   },
   {
+    id: "asdas8dasd",
     type: "Bike",
     policyNo: "PO-123466",
     packet: "",
@@ -150,6 +162,7 @@ const rows: PolicyData[] = [
     status: "active",
   },
   {
+    id: "asdasda1sd",
     type: "Car",
     policyNo: "PO-123467",
     packet: "",
@@ -162,6 +175,7 @@ const rows: PolicyData[] = [
     status: "inactive",
   },
   {
+    id: "asdasdasd1",
     type: "Bag",
     policyNo: "PO-123468",
     packet: "",
@@ -174,6 +188,7 @@ const rows: PolicyData[] = [
     status: "active",
   },
   {
+    id: "asdasdasda",
     type: "Bike",
     policyNo: "PO-123469",
     packet: "",
@@ -186,6 +201,7 @@ const rows: PolicyData[] = [
     status: "inactive",
   },
   {
+    id: "asdasdasd",
     type: "Bag",
     policyNo: "PO-123470",
     packet: "",
@@ -235,61 +251,60 @@ const PolicyInside = () => {
 
   return (
     <>
-    <div className="whiteBg">
-      <div className="policyInside">
-        <h4>Полиси</h4>
-        <PolicySelect policies={rows} onFilterChange={handleFilterChange} />
+      <div className="whiteBg">
+        <div className="policyInside">
+          <h4>Полиси</h4>
+          <PolicySelect policies={rows} onFilterChange={handleFilterChange} />
 
-        <PolicyTable
-          rows={rowsToDisplay}
-          handlePreviousPage={handlePreviousPage}
-          handleNextPage={handleNextPage}
-          page={page}
-          rowsPerPage={rowsPerPage}
-          totalRows={filteredPolicies.length}
-          setPage={setPage} // Pass setPage to PolicyTable
-        />
+          <PolicyTable
+            rows={rowsToDisplay}
+            handlePreviousPage={handlePreviousPage}
+            handleNextPage={handleNextPage}
+            page={page}
+            rowsPerPage={rowsPerPage}
+            totalRows={filteredPolicies.length}
+            setPage={setPage} // Pass setPage to PolicyTable
+          />
+        </div>
       </div>
-    </div>
-    <div className="mobileWrapperPol" style={{display: 'none'}}>
-      <h3 className="h3mobile">Полиси</h3>
-      <div className="selectWrapperMobile">
-        <select className="mobileSelect" name="" id="">
-          <option value="1">нешто</option>
-          <option value="2">нешто</option>
-          <option value="3">нешто</option>
-        </select>
-        <select className="mobileSelect" name="" id="">
-          <option value="1">нешто</option>
-          <option value="2">нешто</option>
-          <option value="3">нешто</option>
-        </select>
-      </div>
+      <div className="mobileWrapperPol" style={{ display: "none" }}>
+        <h3 className="h3mobile">Полиси</h3>
+        <div className="selectWrapperMobile">
+          <select className="mobileSelect" name="" id="">
+            <option value="1">нешто</option>
+            <option value="2">нешто</option>
+            <option value="3">нешто</option>
+          </select>
+          <select className="mobileSelect" name="" id="">
+            <option value="1">нешто</option>
+            <option value="2">нешто</option>
+            <option value="3">нешто</option>
+          </select>
+        </div>
 
-      <div className="containerBlocks">
-      <i className="fa-solid fa-car fa-3x" style={{color: '#ffffff'}}></i>
-      <div className="wrapperTextMobile">
-        <p>Полиси за возило</p>
-        <a>Види повеќе</a>
+        <div className="containerBlocks">
+          <i className="fa-solid fa-car fa-3x" style={{ color: "#ffffff" }}></i>
+          <div className="wrapperTextMobile">
+            <p>Полиси за возило</p>
+            <a>Види повеќе</a>
+          </div>
+        </div>
+        <div className="containerBlocks">
+          <i className="fa-solid fa-car fa-3x" style={{ color: "#ffffff" }}></i>
+          <div className="wrapperTextMobile">
+            <p>Полиси за возило</p>
+            <a>Види повеќе</a>
+          </div>
+        </div>
+        <div className="containerBlocks">
+          <i className="fa-solid fa-car fa-3x" style={{ color: "#ffffff" }}></i>
+          <div className="wrapperTextMobile">
+            <p>Полиси за возило</p>
+            <a>Види повеќе</a>
+          </div>
+        </div>
       </div>
-      </div>
-      <div className="containerBlocks">
-      <i className="fa-solid fa-car fa-3x" style={{color: '#ffffff'}}></i>
-      <div className="wrapperTextMobile">
-        <p>Полиси за возило</p>
-        <a>Види повеќе</a>
-      </div>
-      </div>
-      <div className="containerBlocks">
-      <i className="fa-solid fa-car fa-3x" style={{color: '#ffffff'}}></i>
-      <div className="wrapperTextMobile">
-        <p>Полиси за возило</p>
-        <a>Види повеќе</a>
-      </div>
-      </div>
-    </div>
     </>
-    
   );
 };
 

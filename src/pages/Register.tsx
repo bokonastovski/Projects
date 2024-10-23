@@ -232,7 +232,7 @@
 //   );
 // }
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import phoneImg from "../assets/photos/phone2.png";
 import backIcon from "../assets/icons/image.png";
@@ -294,13 +294,6 @@ export function RegisterPage() {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     if (validateForm()) {
-      const userData = {
-        name: formData.name,
-        phone: formData.phoneNumber,
-        password_confirmation: formData.confirmPassword,
-        email: formData.email,
-        password: formData.password,
-      };
       navigate("/myProfile", { state: { showPopup: true } });
       // try {
       //   const response = await fetch('https://47c3-77-28-131-181.ngrok-free.app/api/register', {

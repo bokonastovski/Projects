@@ -1,4 +1,3 @@
-import Calendar from "react-calendar";
 import ring from "../assets/photos/ring.png";
 import hand from "../assets/photos/2211.w018.n002.1418A.p30.1418-removebg-preview 1.png";
 import backArrow from "../assets/photos/162639-OVHHFQ-781-removebg-preview 1.png";
@@ -86,7 +85,7 @@ export function CalendarDiv() {
       </LocalizationProvider> */}
       <div className="calendarDiv">
         {/* <Calendar tileClassName={tileClassName} /> */}
-        <CustomCalendar/>
+        <CustomCalendar />
       </div>
     </div>
   );
