@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -27,6 +26,8 @@ const RegisterStepSix = () => {
     setLoading(true);
 
     try {
+      // Commented out the API call
+      /*
       const response = await fetch(
         "https://090e-31-11-83-108.ngrok-free.app/register",
         {
@@ -47,7 +48,9 @@ const RegisterStepSix = () => {
         console.error("Response error data:", data);
         throw new Error(data.message || `Error: ${response.status}`);
       }
+      */
 
+      // Simulating a successful registration for now
       localStorage.setItem("isLoggedIn", "true");
       setSuccess(true);
       console.log("Registration successful!");

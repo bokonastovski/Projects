@@ -1,6 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
+// Define the User interface based on expected properties
+interface User {
+  firstName: string;
+  // Add other user properties here as needed
+}
+
 interface RegisterStepThreeProps {
   onContinue: () => void;
 }
@@ -8,12 +14,12 @@ interface RegisterStepThreeProps {
 const RegisterStepThree: React.FC<RegisterStepThreeProps> = ({
   onContinue,
 }) => {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null); // Use the User type or null
 
   useEffect(() => {
     const storedUserData = localStorage.getItem("userData");
     if (storedUserData) {
-      const parsedUser = JSON.parse(storedUserData);
+      const parsedUser: User = JSON.parse(storedUserData); // Use the User type here
       setUser(parsedUser);
     }
   }, []);

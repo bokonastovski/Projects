@@ -7,7 +7,6 @@ import RegisterStepFour from "../components/Register/RegisterStepFour";
 import RegisterStepFive from "../components/Register/RegisterStepFive";
 import RegisterStepSix from "../components/Register/RegisterStepSix";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const Register = () => {
   const [name, setFirstName] = useState("");
@@ -21,7 +20,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
-  const router = useRouter();
+  // const router = useRouter();
 
   const handleSubmitStepOne = () => {
     if (!name || !surname || !email) {

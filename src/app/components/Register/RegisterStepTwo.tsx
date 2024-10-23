@@ -40,6 +40,8 @@ const RegisterStepTwo: React.FC<RegisterStepTwoProps> = ({
   useEffect(() => {
     const fetchCities = async () => {
       try {
+        // Commented out the API call
+        /*
         const response = await fetch(
           "https://090e-31-11-83-108.ngrok-free.app/api/cities",
           {
@@ -61,6 +63,16 @@ const RegisterStepTwo: React.FC<RegisterStepTwoProps> = ({
         const citiesData = result.data;
 
         setCities(citiesData);
+        */
+
+        // Simulated cities data for demonstration purposes
+        const simulatedCitiesData = [
+          { id: 1, name: "Скопје" },
+          { id: 2, name: "Битола" },
+          { id: 3, name: "Тетово" },
+          { id: 4, name: "Охрид" },
+        ];
+        setCities(simulatedCitiesData);
       } catch (error) {
         console.error("Error fetching cities:", error);
       } finally {
@@ -87,61 +99,67 @@ const RegisterStepTwo: React.FC<RegisterStepTwoProps> = ({
           Продолжи да <span>вајбаш!</span>
         </p>
 
-        <select
-          name="gender"
-          value={gender}
-          onChange={(e) => setGender(e.target.value)}
-        >
-          <option value="">Пол</option>
-          <option value="man">Машко</option>
-          <option value="woman">Женско</option>
-        </select>
+        {loading ? ( // Use loading state to show loading message
+          <p>Loading cities...</p>
+        ) : (
+          <>
+            <select
+              name="gender"
+              value={gender}
+              onChange={(e) => setGender(e.target.value)}
+            >
+              <option value="">Пол</option>
+              <option value="man">Машко</option>
+              <option value="woman">Женско</option>
+            </select>
 
-        <select
-          name="city"
-          value={cityId}
-          onChange={(e) => setCityId(e.target.value)}
-        >
-          <option value="">Град</option>
-          {cities.map((city) => (
-            <option key={city.id} value={city.id.toString()}>
-              {city.name}
-            </option>
-          ))}
-        </select>
+            <select
+              name="city"
+              value={cityId}
+              onChange={(e) => setCityId(e.target.value)}
+            >
+              <option value="">Град</option>
+              {cities.map((city) => (
+                <option key={city.id} value={city.id.toString()}>
+                  {city.name}
+                </option>
+              ))}
+            </select>
 
-        <input
-          type="date"
-          placeholder="Дата на раѓање"
-          value={dob}
-          onChange={(e) => setDob(e.target.value)}
-        />
-        <input
-          type="number"
-          placeholder="Телефонски број"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Лозинка"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Повтори Лозинка"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-        />
-        <div className="radio-div">
-          <input className="radio" type="checkbox" id="accept-terms" />
-          <label htmlFor="accept-terms">
-            Согласувам со условите и условите за приватност.
-          </label>
-        </div>
-        {error && <p className="error-message">{error}</p>}
-        <button onClick={handleSubmit}>Заврши</button>
+            <input
+              type="date"
+              placeholder="Дата на раѓање"
+              value={dob}
+              onChange={(e) => setDob(e.target.value)}
+            />
+            <input
+              type="number"
+              placeholder="Телефонски број"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Лозинка"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Повтори Лозинка"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
+            <div className="radio-div">
+              <input className="radio" type="checkbox" id="accept-terms" />
+              <label htmlFor="accept-terms">
+                Согласувам со условите и условите за приватност.
+              </label>
+            </div>
+            {error && <p className="error-message">{error}</p>}
+            <button onClick={handleSubmit}>Заврши</button>
+          </>
+        )}
       </div>
     </>
   );

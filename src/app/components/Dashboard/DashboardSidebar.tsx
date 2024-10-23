@@ -6,7 +6,10 @@ import React from "react";
 
 const DashboardSidebar: React.FC = () => {
   const router = useRouter();
+
   const handleLogout = () => {
+    // Commented out the API call for logout
+    /*
     fetch("https://090e-31-11-83-108.ngrok-free.app/logout", {
       method: "POST",
       headers: {
@@ -25,6 +28,12 @@ const DashboardSidebar: React.FC = () => {
       .catch((err) => {
         console.error("Logout failed:", err);
       });
+    */
+
+    // Simulating a successful logout for demonstration purposes
+    console.log("User logged out successfully");
+    localStorage.removeItem("isLoggedIn");
+    router.push("/");
   };
 
   return (

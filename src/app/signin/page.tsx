@@ -36,6 +36,8 @@ const SignIn = () => {
     const userData = { email, password };
 
     try {
+      // Commented out the API call for login
+      /*
       const res = await fetch(
         "https://090e-31-11-83-108.ngrok-free.app/login",
         {
@@ -60,6 +62,12 @@ const SignIn = () => {
         setError("Грешка при најава. Ве молиме обидете се повторно.");
         localStorage.setItem("isLoggedIn", "false");
       }
+      */
+
+      // Simulating a successful login for demonstration purposes
+      console.log("User logged in successfully:", userData);
+      localStorage.setItem("isLoggedIn", "true");
+      router.push("/dashboard/dashboard-existing");
     } catch (err) {
       console.error("Login error:", err);
       setError("Се случи грешка. Обидете се повторно подоцна.");

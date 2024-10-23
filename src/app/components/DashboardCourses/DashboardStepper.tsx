@@ -5,8 +5,15 @@ import Image from "next/image";
 
 const steps = ["", "", "", ""];
 
-const CustomStepIcon = (props: any) => {
-  const { active, completed, icon } = props;
+// Update the props type to allow boolean | undefined
+interface CustomStepIconProps {
+  active?: boolean; // Allowing undefined
+  completed?: boolean; // Allowing undefined
+  icon: number; // Assuming the icon is a number based on your usage
+}
+
+const CustomStepIcon: React.FC<CustomStepIconProps> = (props) => {
+  const { active = false, completed = false, icon } = props; // Default to false if undefined
 
   const whiteMedalStyle = {
     width: 30,
@@ -62,7 +69,7 @@ const CustomStepIcon = (props: any) => {
   return <div style={active ? activeStepStyle : defaultStepStyle}>{icon}</div>;
 };
 
-const StepperComponent = () => {
+const StepperComponent: React.FC = () => {
   const [activeStep, setActiveStep] = useState(2);
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Result1 from "./Result1";
 import Result2 from "./Result2";
 import Result3 from "./Result3";
+import { StepIconProps } from "@mui/material"; // Import StepIconProps
 
 interface Question {
   question: string;
@@ -21,7 +22,7 @@ const questions: Question[] = [
       "Преку пишување во тетратка, ексел-табели или апликации за следење на буџетот.",
     ],
     answer:
-      "Преку пишување во тетратка, ексел-табели или апликации за следење на буџетот.",
+      "Преко пишување во тетратка, ексел-табели или апликации за следење на буџетот.",
   },
   {
     question: "Што претставува буџетирање?",
@@ -108,7 +109,7 @@ const questions: Question[] = [
   },
 ];
 
-const CustomStepIcon = (props: any) => {
+const CustomStepIcon = (props: StepIconProps) => {
   const { completed, error } = props;
 
   return (
@@ -245,41 +246,36 @@ const Quiz: React.FC = () => {
                     src={isCorrect ? "/icons/true.svg" : "/icons/wrong.svg"}
                     alt=""
                   />
-                  <p>
-                    {isCorrect
-                      ? "Точен одговор! Продолжи со исто темпо!"
-                      : "Грешен одговор! Продолжи со следните прашања и покажи што знаеш!"}
-                  </p>
+                  <p>{isCorrect ? "Точно!" : "Нетоно!"}</p>
                 </div>
-                <div className="right">
-                  <button onClick={handleNextQuestion}>Продолжи</button>
-                </div>
+                <button className="next-btn" onClick={handleNextQuestion}>
+                  Следно
+                </button>
               </div>
             )}
           </>
         )}
       </div>
+
       <Dialog open={open} onClose={handleCloseModal}>
-        <div className="modal-back">
-          <div className="top">
-            <h2>Дали навистина сакаш да се откажеш ?</h2>
-            <img src="/images/question.png" alt="" />
-          </div>
-          <div className="bottom">
-            <p>Одлично ти оди!</p>
-            <p>Ако престанеш сега, ќе го изгубиш целиот напредок на тестот.</p>
-            <div className="btns">
-              <button
-                className="empty-btn"
-                onClick={() => router.push("/dashboard")}
-              >
-                Назад кон профил
-              </button>
-              <button className="fill-btn" onClick={handleCloseModal}>
-                Кон тестот
-              </button>
-            </div>
-          </div>
+        <div className="dialog-content">
+          <h2>Дали сте сигурни дека сакате да се вратите?</h2>
+          <p>
+            Сите неисполнети одговори ќе бидат изгубени. Дали сакате да се
+            вратите?
+          </p>
+          <button
+            className="confirm-btn"
+            onClick={() => {
+              handleCloseModal();
+              router.push("/"); // Navigate back to home or desired route
+            }}
+          >
+            Да
+          </button>
+          <button className="cancel-btn" onClick={handleCloseModal}>
+            Не
+          </button>
         </div>
       </Dialog>
     </div>
