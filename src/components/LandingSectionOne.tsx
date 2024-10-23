@@ -2,7 +2,7 @@ import MainBtnOrange from "./MainBtnOrange";
 import unLearningOne from "../picturesFolder/landingPagePictures/unLearningOne.png";
 import unLearningTwo from "../picturesFolder/landingPagePictures/unLearningTwo.png";
 import unLearningThree from "../picturesFolder/landingPagePictures/unLearningThree.png";
-import "../css/components/_LandingSectionOne.scss";
+import "../css/components/_LandingsectionOne.scss";
 
 const LandingSectionOne = () => {
   return (
@@ -11,8 +11,10 @@ const LandingSectionOne = () => {
         <div className="sectionOneLeftPart">
           <h1 className="sectionTitle">unlearning is the evolution</h1>
           <p>
-            we enable professionals to utilize new business solutions for a regenerative and inclusive world.
-            larger.world is an unlearning platform & community, focused on sustainability, diversity and inclusion.
+            we enable professionals to utilize new business solutions for a
+            regenerative and inclusive world. larger.world is an unlearning
+            platform & community, focused on sustainability, diversity and
+            inclusion.
           </p>
           <MainBtnOrange text="start free" />
         </div>
