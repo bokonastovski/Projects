@@ -8,15 +8,16 @@ const modal = document.getElementById("modal");
 const modalBtn = document.getElementById("modalBtn");
 const videoBadge = document.querySelector("#videoBadge");
 const activityBadge = document.querySelector("#activityBadge");
-
 togglePasswordButton.addEventListener("click", function () {
   const type =
     passwordInput.getAttribute("type") === "password" ? "text" : "password";
   passwordInput.setAttribute("type", type);
   this.innerHTML =
-    type === "password"
-      ? `<i class="fa-solid fa-eye"></i>`
-      : `<i class="fa-solid fa-eye-slash"></i>`;
+    type === "password" ? (
+      <i class="fa-solid fa-eye"></i>
+    ) : (
+      <i class="fa-solid fa-eye-slash"></i>
+    );
 });
 
 squareBtn.addEventListener("click", function () {
@@ -29,19 +30,11 @@ squareBtn.addEventListener("click", function () {
   }
 });
 
-const validUsers = [
-  { username: "User123", password: "Pass123" },
-  { username: "User456", password: "Pass456" },
-  { username: "User789", password: "Pass789" },
-];
-
 logInForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   const username = document.querySelector("#username").value;
   const password = document.querySelector("#password").value;
 
-  // Uncomment this section to use fetch for authentication
-  /*
   const requestedUserData = { username, password };
 
   try {
@@ -81,27 +74,12 @@ logInForm.addEventListener("submit", async (e) => {
   } catch (error) {
     console.error("Error:", error);
   }
-  */
-
-  const foundUser = validUsers.find(
-    (user) => user.username === username && user.password === password
-  );
-
-  if (foundUser) {
-    localStorage.setItem("user", JSON.stringify(foundUser));
-    colorVideoBadge();
-    colorActivityBadge();
-    profileFunctions();
-  } else {
-    alert("Wrong username or password");
-  }
 });
 
 function profileFunctions() {
   modal.style.display = "block";
   loggedIn();
 }
-
 function loggedIn() {
   fillProfile();
   profile.style.display = "block";
@@ -121,7 +99,8 @@ modalBtn.addEventListener("click", () => {
 });
 
 let isLoggedIn = JSON.parse(localStorage.getItem("user")) || [];
-if (isLoggedIn) {
+let data = Object.keys(isLoggedIn).length;
+if (data > 0) {
   loggedIn();
 }
 
