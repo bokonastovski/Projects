@@ -13,11 +13,9 @@ togglePasswordButton.addEventListener("click", function () {
     passwordInput.getAttribute("type") === "password" ? "text" : "password";
   passwordInput.setAttribute("type", type);
   this.innerHTML =
-    type === "password" ? (
-      <i class="fa-solid fa-eye"></i>
-    ) : (
-      <i class="fa-solid fa-eye-slash"></i>
-    );
+    type === "password"
+      ? `<i class="fa-solid fa-eye"></i>`
+      : `<i class="fa-solid fa-eye-slash"></i>`;
 });
 
 squareBtn.addEventListener("click", function () {

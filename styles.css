@@ -342,20 +342,17 @@ input {
   background: #ffffff;
   border: 1.58px solid #9946f3;
   width: 100%;
+  font-family: Montserrat;
+  font-size: 18.97px;
+  font-weight: 500;
+  line-height: 25.29px;
+  text-align: left;
 }
 
 .najavise button i {
   color: #152347;
   font-size: 22px;
   padding: 1rem;
-}
-
-.najavise button p {
-  font-family: Montserrat;
-  font-size: 18.97px;
-  font-weight: 500;
-  line-height: 25.29px;
-  text-align: left;
 }
 
 .lines hr,
