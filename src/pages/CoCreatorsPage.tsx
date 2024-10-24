@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import coCreatorsLogo from "../picturesFolder/coCreators/coCreatorsLogo.png";
 import coCreatorsUpDownIcon from "../picturesFolder/coCreators/coCreatorsUpDownIcon.png";
 import coCreatorsNote1 from "../picturesFolder/coCreators/coCreatorsNote1.png";
@@ -87,9 +87,7 @@ const CoCreatorsPage = () => {
       <div className="coCreatorsSectionOne slide">
         <div className="coCreatorsHomeContent">
           <div className="logo">
-            <Link to={"/"}>
-              <img src={coCreatorsLogo} alt="image of logo" />
-            </Link>
+            <Link to={"/"}><img src={coCreatorsLogo} alt="image of logo" /></Link>
           </div>
 
           <div className="textContent">
@@ -335,6 +333,7 @@ const CoCreatorsPage = () => {
           </div>
           <img src={coworkImg8} alt="cowork image" className="coworkImg8" />
         </div>
+
 
         <div className="seePostContainer">
           <img

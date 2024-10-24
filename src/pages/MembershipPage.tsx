@@ -1,3 +1,4 @@
+import React from "react";
 import Subscriptions from "../components/Subscriptions";
 import ContactForm from "../components/ContactForm";
 import Newsletter from "../components/NewsLetter";

@@ -1,5 +1,11 @@
-const ExplorePage = () => {
-  return <div></div>;
-};
+import React from 'react'
 
-export default ExplorePage;
+const ExplorePage = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default ExplorePage

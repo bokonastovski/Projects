@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/components/_NewsLetter.scss";
+import "../css/components/_Newsletter.scss";
 import linkedIn from "../picturesFolder/newsLetter/linkedIn.png";
 import linkedInHover from "../picturesFolder/newsLetter/linkedIn_hover.png";
 

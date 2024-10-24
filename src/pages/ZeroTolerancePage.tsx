@@ -1,5 +1,11 @@
-const ZeroTolerancePage = () => {
-  return <div></div>;
-};
+import React from 'react'
 
-export default ZeroTolerancePage;
+const ZeroTolerancePage = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default ZeroTolerancePage

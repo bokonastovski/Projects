@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import backgroundHome from "../picturesFolder/planetEarthPictures/backgroundHome.png";
 import planetEarthLogo from "../picturesFolder/planetEarthPictures/planetEarthLogo.png";
 import upAndDownIcon from "../picturesFolder/planetEarthPictures/up&DownIcon.png";
@@ -46,6 +46,7 @@ const PlanetEarthPage = () => {
     setActiveCard(null);
   };
 
+  
   useEffect(() => {
     const planetEarthCont = document.querySelector(
       ".outerPlanetEarthContainer"
@@ -61,22 +62,18 @@ const PlanetEarthPage = () => {
     planetEarthCont.addEventListener("wheel", handleWheel as EventListener);
 
     return () => {
-      planetEarthCont.removeEventListener(
-        "wheel",
-        handleWheel as EventListener
-      );
+      planetEarthCont.removeEventListener("wheel", handleWheel as EventListener);
     };
   }, []);
 
   return (
     <div className="outerPlanetEarthContainer">
+
       <div className="backgroundHome">
         <img src={backgroundHome} alt="" className="backgroundLayer" />
         <div className="planetEarthHomeContent slide">
           <div className="logoContainer">
-            <Link to={"/"}>
-              <img src={planetEarthLogo} alt="Planet Earth Logo" />
-            </Link>
+            <Link to={"/"}><img src={planetEarthLogo} alt="Planet Earth Logo" /></Link>
           </div>
           <div className="textContainer">
             <h1>planet earth</h1>
@@ -103,66 +100,67 @@ const PlanetEarthPage = () => {
         <div className="treeCombOne treeButterflyComb">
           <img src={treeTypeOne} alt="pic of a tree" className="treeImage" />
 
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
               src={butterflyRight}
               alt="pic of a buttterly"
               className="butterflyImage"
-              onClick={() => handleButterflyClick("butterfly1")}
+              onClick={() => handleButterflyClick('butterfly1')}
             />
-            {activeCard === "butterfly1" && (
+            {activeCard === 'butterfly1' && (
               <UICard
                 title="How do business tackle diversity & inclusion?"
                 description="Doing and de-centering can be your new way to tackle diversity & inclusion in your business. South African Tumi Sineke, pioneer in diversity, explains how."
                 onClose={closeCard}
                 buttonText="watch here"
                 imageSrc={butterflyCardImg1}
-                isVisible={activeCard === "butterfly1"}
+                isVisible={activeCard === 'butterfly1'}
               />
             )}
           </div>
+          
         </div>
 
-        <div className="butterflyContainerHome1">
-          <img
-            src={butterflyLeft}
-            alt="pic of a butterfly"
-            className="butterflyImage butterflyLeft"
-            onClick={() => handleButterflyClick("butterfly2")}
-          />
-          {activeCard === "butterfly2" && (
-            <UICard
-              title="Climate Shadow"
-              description="Climate Shadow is not only a new term that starts to outshines the term climate crisis. It's also a concept that will dominate our business activities in the next years."
-              onClose={closeCard}
-              buttonText="find out more"
-              imageSrc={butterflyCardImg2}
-              isVisible={activeCard === "butterfly2"}
+        <div className="butterflyContainerHome1" >
+            <img
+              src={butterflyLeft}
+              alt="pic of a butterfly"
+              className="butterflyImage butterflyLeft"
+              onClick={() => handleButterflyClick('butterfly2')}
             />
-          )}
-        </div>
-
+            {activeCard === 'butterfly2' && (
+              <UICard
+                title="Climate Shadow"
+                description="Climate Shadow is not only a new term that starts to outshines the term climate crisis. It's also a concept that will dominate our business activities in the next years."
+                onClose={closeCard}
+                buttonText="find out more"
+                imageSrc={butterflyCardImg2} 
+                isVisible={activeCard === 'butterfly2'}
+              />
+            )}
+          </div>
+          
         <div className="treeCombTwo treeButterflyComb">
           <img
             src={treeTypeTwo}
             alt="pic of a tree"
             className="treeImage treeImageTwo"
           />
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
               src={butterflyRight}
               alt="pic of a buttterly"
               className="butterflyImage"
-              onClick={() => handleButterflyClick("butterfly3")}
+              onClick={() => handleButterflyClick('butterfly3')}
             />
-            {activeCard === "butterfly3" && (
+            {activeCard === 'butterfly3' && (
               <UICard
                 title="Belonging as DEI concept by Tumi Sineke"
                 description="Different cultures enable different perspectives - and isn’t that what we need? South African Tumi Opeke, pioneer in diversity, explains why belonging is the new DEI concept."
                 onClose={closeCard}
                 buttonText="see for yourself"
-                imageSrc={butterflyCardImg3}
-                isVisible={activeCard === "butterfly3"}
+                imageSrc={butterflyCardImg3} 
+                isVisible={activeCard === 'butterfly3'}
               />
             )}
           </div>
@@ -185,21 +183,21 @@ const PlanetEarthPage = () => {
             alt="picture of a rock"
             className="rockImageOne"
           />
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
               src={butterflyFront}
               alt="picture of a butterfly"
               className="butterflyImage butterflyRockOne"
-              onClick={() => handleButterflyClick("butterfly4")}
+              onClick={() => handleButterflyClick('butterfly4')}
             />
-            {activeCard === "butterfly4" && (
+            {activeCard === 'butterfly4' && (
               <UICard
                 title="Pour Equality: Women Redefining Industries"
                 description="You can image a world in which more and more women break into male-dominated fields? Then the podcast Poor equality: Women redefining industries is for you."
                 onClose={closeCard}
                 buttonText="listen in"
-                imageSrc={butterflyCardImg4}
-                isVisible={activeCard === "butterfly4"}
+                imageSrc={butterflyCardImg4} 
+                isVisible={activeCard === 'butterfly4'}
               />
             )}
           </div>
@@ -207,21 +205,21 @@ const PlanetEarthPage = () => {
 
         <div className="treeCombThree treeButterflyComb">
           <img src={treeTypeThree} alt="pic of a tree" />
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
               src={butterflyLeft}
               alt="pic of a butterfly"
               className="butterflyImage"
-              onClick={() => handleButterflyClick("butterfly5")}
+              onClick={() => handleButterflyClick('butterfly5')}
             />
-            {activeCard === "butterfly5" && (
+            {activeCard === 'butterfly5' && (
               <UICard
                 title="Floating small boats first"
                 description="Floating small boats first unfolds powerful stories of how indingenious communities can help our businesses to really save Planet Earth.t"
                 onClose={closeCard}
                 buttonText="see for yourself"
-                imageSrc={butterflyCardImg5}
-                isVisible={activeCard === "butterfly5"}
+                imageSrc={butterflyCardImg5} 
+                isVisible={activeCard === 'butterfly5'}
               />
             )}
           </div>
@@ -233,21 +231,21 @@ const PlanetEarthPage = () => {
 
         <div className="dirtButterflyComb">
           <img src={dirtImage} alt="pic of dirt" />
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
               src={butterflyFront}
               alt="pic of a butterfly"
               className="butterflyImage"
-              onClick={() => handleButterflyClick("butterfly6")}
+              onClick={() => handleButterflyClick('butterfly6')}
             />
-            {activeCard === "butterfly6" && (
+            {activeCard === 'butterfly6' && (
               <UICard
                 title="Future of work: there has to be another way"
                 description="Ever had that thought that old business structures limit or block real change to happen? Well, they do! Here are some new approaches that are already common practice."
                 onClose={closeCard}
                 buttonText="discover now"
-                imageSrc={butterflyCardImg6}
-                isVisible={activeCard === "butterfly6"}
+                imageSrc={butterflyCardImg6} 
+                isVisible={activeCard === 'butterfly6'}
               />
             )}
           </div>
@@ -255,21 +253,21 @@ const PlanetEarthPage = () => {
 
         <div className="treeCombOne treeButterflyComb">
           <img src={treeTypeOne} alt="pic of a tree" className="treeImage" />
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
               src={butterflyRight}
               alt="pic of a buttterly"
               className="butterflyImage"
-              onClick={() => handleButterflyClick("butterfly7")}
+              onClick={() => handleButterflyClick('butterfly7')}
             />
-            {activeCard === "butterfly7" && (
+            {activeCard === 'butterfly7' && (
               <UICard
                 title="Intro to greenwashing"
                 description="In the past years, greenwashing has been running over us almost like a Tsunami. So we think it's time to go back to its core and remind ourselves what it really is about."
                 onClose={closeCard}
                 buttonText="let's do it"
-                imageSrc={butterflyCardImg7}
-                isVisible={activeCard === "butterfly7"}
+                imageSrc={butterflyCardImg7} 
+                isVisible={activeCard === 'butterfly7'}
               />
             )}
           </div>
@@ -281,21 +279,21 @@ const PlanetEarthPage = () => {
             alt="picture of a rock"
             className="rockImageTwo"
           />
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
-              src={butterflyFront}
-              alt="picture of a butterfly"
-              className="butterflyImage butterflyRockTwo"
-              onClick={() => handleButterflyClick("butterfly8")}
+                src={butterflyFront}
+                alt="picture of a butterfly"
+                className="butterflyImage butterflyRockTwo"
+              onClick={() => handleButterflyClick('butterfly8')}
             />
-            {activeCard === "butterfly8" && (
+            {activeCard === 'butterfly8' && (
               <UICard
                 title="How can businesses be naturepositive by Paul Chatterton"
                 description="Not (yet) knowing is okay. But not caring is not. Landscape expert Paul Chatterton introduces two approaches every business can use to be nature postive."
                 onClose={closeCard}
                 buttonText="watch now"
-                imageSrc={butterflyCardImg8}
-                isVisible={activeCard === "butterfly8"}
+                imageSrc={butterflyCardImg8} 
+                isVisible={activeCard === 'butterfly8'}
               />
             )}
           </div>
@@ -309,21 +307,21 @@ const PlanetEarthPage = () => {
       <div className="backgroundNumThree slide">
         <div className="leavesButterflyComb leavesCombOne">
           <img src={leavesImage} alt="pic of leaves" className="leavesOne" />
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
-              src={butterflyRight}
-              alt="pic of a butterfly"
-              className="butterflyImage"
-              onClick={() => handleButterflyClick("butterfly9")}
+                src={butterflyRight}
+                alt="pic of a butterfly"
+                className="butterflyImage"
+              onClick={() => handleButterflyClick('butterfly9')}
             />
-            {activeCard === "butterfly9" && (
+            {activeCard === 'butterfly9' && (
               <UICard
                 title="Global Resilience & Climate"
                 description="Traditional approaches to resilience, like “bouncing back,” or mistaking it for crisis management, dont work anymore. A holistic approach to global resiliance and climate can be your new solution."
                 onClose={closeCard}
                 buttonText="find out more"
-                imageSrc={butterflyCardImg9}
-                isVisible={activeCard === "butterfly9"}
+                imageSrc={butterflyCardImg9} 
+                isVisible={activeCard === 'butterfly9'}
               />
             )}
           </div>
@@ -335,46 +333,50 @@ const PlanetEarthPage = () => {
 
         <div className="leavesButterflyComb leavesCombTwo">
           <img src={leavesImage} alt="pic of leaves" className="leavesTwo" />
-          <div className="butterflyContainer">
+          <div className="butterflyContainer" >
             <img
               src={butterflyRight}
               alt="pic of a butterfly"
               className="butterflyImage"
-              onClick={() => handleButterflyClick("butterfly10")}
+              onClick={() => handleButterflyClick('butterfly10')}
             />
-            {activeCard === "butterfly10" && (
+            {activeCard === 'butterfly10' && (
               <UICard
                 title="How do we finance regeneration? by Paul Chatterton"
                 description="How do we finance regeneration? is a question that often feels overwhelming or blocks real change to happen. But there are some very clear answers to it, knows Landscape Finance Lab founder Paul Chatterton."
                 onClose={closeCard}
                 buttonText="see the content"
-                imageSrc={butterflyCardImg10}
-                isVisible={activeCard === "butterfly10"}
+                imageSrc={butterflyCardImg10} 
+                isVisible={activeCard === 'butterfly10'}
               />
             )}
           </div>
         </div>
 
         <div className="leavesButterflyComb leavesCombThree">
-          <img src={leavesImage} alt="pic of leaves" className="leavesThree" />
-
+          <img
+            src={leavesImage}
+            alt="pic of leaves"
+            className="leavesThree"
+          />
+          
           <div className="newButterflyCont">
             <img src={newMark} alt="new mark" />
-            <div className="butterflyContainer">
+            <div className="butterflyContainer" >
               <img
-                src={butterflyNew}
-                alt="pic of a butterfly"
-                className="butterflyImage"
-                onClick={() => handleButterflyClick("butterfly11")}
+                  src={butterflyNew}
+                  alt="pic of a butterfly"
+                  className="butterflyImage"
+                onClick={() => handleButterflyClick('butterfly11')}
               />
-              {activeCard === "butterfly11" && (
+              {activeCard === 'butterfly11' && (
                 <UICard
                   title="Regenerar"
                   description="Movie review of a documentary that challenges conventional perspectives on change and regeneration."
                   onClose={closeCard}
                   buttonText="find out more"
-                  imageSrc={butterflyCardImg11}
-                  isVisible={activeCard === "butterfly11"}
+                  imageSrc={butterflyCardImg11} 
+                  isVisible={activeCard === 'butterfly11'}
                 />
               )}
             </div>
@@ -393,6 +395,7 @@ const PlanetEarthPage = () => {
           <img src={noteSeventh} alt="pic of a note" />
         </div>
       </div>
+      
     </div>
   );
 };
