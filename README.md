@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+<h1 align="center">
+    <samp>HACKATHON 03 - LARGER.WORLD</samp>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"> 
+  <samp>
+    <br>
+    「 # Larger.World
 
-Currently, two official plugins are available:
+**General**  
+Larger.world addresses the need for a more sustainable and inclusive future by empowering professionals and organizations to unlearn outdated practices and embrace new solutions. It challenges the traditional approach to professional development, focusing on the evolution of mindsets and behaviors.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Project Goal**  
+The goal of the Larger.world website is to introduce users to the concept of unlearning and its impact on building a more sustainable and inclusive world. The design and content inspire users to explore the platform's resources and join the community. To ensure compliance with brand guidelines, we opted for rounded visual shapes inspired by the logo design.
 
-## Expanding the ESLint configuration
+## My Contribution
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Explore Page
 
-- Configure the top-level `parserOptions` property like this:
+  - I developed the Explore page, which aggregates and displays all videos, podcasts, and articles. 
+  - Created a `db.json` file to store content data, enabling the dynamic rendering of each resource.
+  - Implemented search functionality, allowing users to find content based on keywords.
+  - Ensured each content section included icons, author names, titles, durations, brief descriptions, and tailored CTA buttons for user engagement.
+### Resource Pages
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Designed and developed layouts for video, podcast, and article pages, ensuring each provided an intuitive experience with relevant CTA buttons and formatted content sections.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Hackathon Project
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This project was developed during a hackathon where our team of four front-end developers collaborated to create a winning solution. Our roles were divided to ensure each component was thoroughly designed and implemented.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+## Support
+
+For any issues or questions, please consult the documentation or contact support. 
+」
+<br>
+<br>
+</samp>
+
+</p>
