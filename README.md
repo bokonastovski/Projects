@@ -1,5 +1,5 @@
 <h1 align="center">
-    <samp>HACKATHON 03 - LARGER.WORLD</samp>
+    <samp>HACKATHON 02 - LARGER.WORLD</samp>
 </h1>
 
 <p align="center"> 
